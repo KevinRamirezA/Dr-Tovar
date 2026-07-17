@@ -4,636 +4,833 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Juan Daniel de la Torre Tovar — Oftalmólogo · Clínica de Ojos CDMX</title>
-<meta name="description" content="Clínica oftalmológica en CDMX del Dr. Juan Daniel de la Torre Tovar. Cirugía LASIK, cataratas, glaucoma, retina y más. Más de 15 años de experiencia y tecnología láser de última generación.">
-<meta name="theme-color" content="#0A1F3D">
+<meta name="description" content="Expediente abierto: cirugía LASIK, cataratas, glaucoma y retina en CDMX. Dr. Juan Daniel de la Torre Tovar, oftalmólogo con más de 15 años de experiencia. Agenda tu cita en línea.">
+<meta name="theme-color" content="#12100B">
 <meta property="og:title" content="Dr. Juan Daniel de la Torre Tovar — Oftalmólogo · CDMX">
-<meta property="og:description" content="Cirugías oculares con tecnología láser. Más de 15 años devolviendo la visión clara a miles de pacientes.">
+<meta property="og:description" content="Cirugías oculares con tecnología láser. Agenda tu valoración en línea.">
 <meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Physician","name":"Dr. Juan Daniel de la Torre Tovar","medicalSpecialty":"Ophthalmology","address":{"@type":"PostalAddress","streetAddress":"Av. Insurgentes Sur 1602, Piso 4, Consultorio 402","addressLocality":"Ciudad de México","addressCountry":"MX"},"telephone":"+52 55 5545 8811"}
+</script>
 <style>
-/* ============ RESET & TOKENS ============ */
+/* ================= TOKENS ================= */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#0A1F3D; --navy-800:#0E2A52; --navy-900:#071528;
-  --primary:#0B6FA4; --primary-dark:#08557E; --primary-light:#E6F2F9;
-  --teal:#0E9AA7;
-  --gold:#C9A96E; --gold-dark:#9C7A3C; --gold-soft:#F5EEDD;
-  --wa:#25D366; --wa-dark:#1DA851;
-  --ink:#132133; --text:#3A4757; --muted:#657186; --line:#E3E9F0;
-  --bg:#FFFFFF; --bg-alt:#F4F8FB; --bg-tint:#EDF4F9;
-  --danger:#DC2626;
-  --shadow-sm:0 1px 3px rgba(10,31,61,.08),0 1px 2px rgba(10,31,61,.06);
-  --shadow:0 8px 24px rgba(10,31,61,.10);
-  --shadow-lg:0 20px 48px rgba(10,31,61,.16);
-  --radius:14px; --radius-sm:9px; --radius-lg:22px;
-  --maxw:1200px;
-  --ease:cubic-bezier(.4,0,.2,1);
+  --paper:#F5F1E8; --paper-2:#EDE8DB; --card:#FBF9F3;
+  --ink:#12100B; --ink-2:#43403A; --ink-3:#6E6A60;
+  --line:#12100B; --hair:#CFC8B8;
+  --green:#123F33; --green-2:#0C2E25; --green-soft:#DDE7DF;
+  --copper:#9A4A22; --copper-soft:#F3E3D8;
+  --gold:#8A6D28;
+  --wa:#1FAE54;
+  --err:#A3341F;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Archivo',system-ui,sans-serif;
+  --r:2px;
+  --gutter:clamp(1rem,4vw,3rem);
 }
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Open Sans',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;overflow-x:hidden}
-h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--ink);line-height:1.15;font-weight:700}
-a{color:inherit;text-decoration:none}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1rem;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:linear-gradient(90deg,transparent calc(100% - 1px),rgba(18,16,11,.045) 0) 0 0/8.333% 100%}
+h1,h2,h3{font-family:var(--serif);line-height:1.02;font-weight:700;letter-spacing:-.01em}
+a{color:inherit}
 img{max-width:100%;display:block}
-ul{list-style:none}
-:focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:4px}
-button{font-family:inherit;cursor:pointer;border:none;background:none}
-
-/* ============ HELPERS ============ */
-.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2.5rem)}
-.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--primary)}
-.eyebrow svg{width:16px;height:16px}
-.section{padding:clamp(3.5rem,8vw,6rem) 0}
-.section-head{text-align:center;max-width:640px;margin:0 auto clamp(2.2rem,5vw,3.2rem)}
-.section-head h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:.6rem 0 .7rem}
-.section-head p{color:var(--muted);font-size:1.05rem}
-.icon{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.95rem;padding:.85rem 1.6rem;border-radius:var(--radius-sm);transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s var(--ease);white-space:nowrap;min-height:48px}
-.btn .icon{width:20px;height:20px}
-.btn-primary{background:linear-gradient(135deg,var(--primary),var(--teal));color:#fff;box-shadow:0 6px 18px rgba(11,111,164,.32)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(11,111,164,.42)}
-.btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.32)}
-.btn-wa:hover{background:var(--wa-dark);transform:translateY(-2px)}
-.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy-900);box-shadow:0 6px 18px rgba(201,169,110,.34)}
-.btn-gold:hover{transform:translateY(-2px)}
-.btn-outline{background:transparent;border:2px solid rgba(255,255,255,.55);color:#fff}
-.btn-outline:hover{background:rgba(255,255,255,.12);border-color:#fff}
-.btn-ghost{background:var(--primary-light);color:var(--primary-dark)}
-.btn-ghost:hover{background:#d7e9f4}
-
-/* ============ SKIP LINK ============ */
-.skip{position:absolute;left:-999px;top:0;z-index:999;background:var(--navy);color:#fff;padding:.8rem 1.2rem;border-radius:0 0 8px 0;font-weight:600}
+ul,ol{list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--copper);outline-offset:2px}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1240px;margin-inline:auto;padding-inline:var(--gutter);position:relative;z-index:1}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.skip{position:absolute;left:-999px;top:0;z-index:99;background:var(--ink);color:var(--paper);padding:.7rem 1rem;font-family:var(--mono)}
 .skip:focus{left:0}
+.ico{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
-/* ============ TOPBAR ============ */
-.topbar{background:var(--navy-900);color:rgba(255,255,255,.82);font-size:.82rem}
-.topbar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem 1.6rem;padding-block:.5rem}
-.topbar-group{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.6rem}
-.topbar-item{display:inline-flex;align-items:center;gap:.5rem}
-.topbar-item .icon{width:15px;height:15px;stroke:var(--gold)}
-.topbar-item a:hover{color:var(--gold)}
+/* ================= FILE BAR ================= */
+.filebar{border-bottom:1px solid var(--line);background:var(--paper);font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase}
+.filebar .wrap{display:flex;flex-wrap:wrap;gap:.35rem 2rem;justify-content:space-between;padding-block:.5rem}
+.filebar span b{color:var(--copper);font-weight:600}
+.filebar a{text-decoration:none}
+.filebar a:hover{color:var(--copper)}
 
-/* ============ NAV ============ */
-.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(10,31,61,.06)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.5rem}
-.brand{display:flex;align-items:center;gap:.7rem}
-.brand img{height:48px;width:auto}
-.brand-txt{display:flex;flex-direction:column;line-height:1.15}
-.brand-name{font-family:'Montserrat',sans-serif;font-weight:700;font-size:.98rem;color:var(--navy)}
-.brand-sub{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.nav-links{display:flex;align-items:center;gap:.2rem}
-.nav-links a{font-family:'Montserrat',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.03em;color:var(--ink);padding:.65rem .85rem;border-radius:7px;transition:color .2s,background .2s}
-.nav-links a:hover{color:var(--primary);background:var(--primary-light)}
-.nav-cta{display:flex;align-items:center;gap:.6rem}
-.nav-toggle{display:none;width:46px;height:46px;border-radius:9px;align-items:center;justify-content:center;color:var(--navy)}
-.nav-toggle .icon{width:26px;height:26px}
+/* ================= HEADER ================= */
+.hd{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
+.hd .wrap{display:flex;align-items:stretch;gap:0;padding-inline:var(--gutter)}
+.brand{display:flex;align-items:center;gap:.7rem;padding-block:.75rem;text-decoration:none;margin-right:auto}
+.brand img{height:42px;width:auto}
+.brand b{font-family:var(--serif);font-size:1.05rem;font-weight:700;line-height:1.05;display:block}
+.brand small{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.nav{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{display:flex;align-items:center;gap:.5rem;padding:0 1.05rem;border-left:1px solid var(--hair);text-decoration:none;font-size:.8rem;font-weight:600;white-space:nowrap;transition:background .18s,color .18s}
+.nav a i{font-style:normal;font-family:var(--mono);font-size:.62rem;color:var(--copper)}
+.nav a:hover{background:var(--ink);color:var(--paper)}
+.nav a:hover i{color:var(--paper)}
+.nav a.cta{background:var(--green);color:var(--paper);border-left:1px solid var(--line)}
+.nav a.cta:hover{background:var(--green-2)}
+.nav a.cta i{color:#CBB77A}
 
-/* ============ HERO ============ */
-.hero{position:relative;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-800) 45%,var(--primary-dark) 100%);color:#fff;overflow:hidden}
-.hero::before{content:"";position:absolute;top:-160px;right:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(14,154,167,.30),transparent 70%)}
-.hero::after{content:"";position:absolute;bottom:-180px;left:-140px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(201,169,110,.18),transparent 70%)}
-.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:2.5rem;align-items:center;padding-block:clamp(3rem,7vw,5rem)}
-.hero-eyebrow{color:var(--gold);border:1px solid rgba(201,169,110,.5);background:rgba(201,169,110,.10);padding:.4rem .9rem;border-radius:100px}
-.hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.4rem);font-weight:800;margin:1.1rem 0 1rem}
-.hero h1 span{color:var(--gold)}
-.hero-lead{font-size:clamp(1rem,2.4vw,1.16rem);color:rgba(255,255,255,.9);max-width:36ch;margin-bottom:1.6rem}
-.hero-cred{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.8rem}
-.cred-chip{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);padding:.5rem .85rem;border-radius:100px;font-size:.8rem;font-weight:600}
-.cred-chip .icon{width:16px;height:16px;stroke:var(--gold)}
-.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem}
-.hero-visual{display:flex;justify-content:center;align-items:center;position:relative}
-.hero-visual .ring{position:absolute;width:min(420px,90%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 65%)}
-.hero-visual img{position:relative;width:min(320px,80%);filter:drop-shadow(0 20px 45px rgba(0,0,0,.35))}
-@media(prefers-reduced-motion:no-preference){.hero-visual img{animation:float 5s ease-in-out infinite}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+/* ================= HERO / SNELLEN ================= */
+.hero{border-bottom:1px solid var(--line);position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);min-height:min(78vh,760px)}
+.hero-l{padding-block:clamp(2.2rem,6vw,4.5rem);padding-right:clamp(1.2rem,4vw,3.2rem);display:flex;flex-direction:column;justify-content:center;gap:1.4rem}
+.tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:.6rem}
+.tag::before{content:"";width:34px;height:1px;background:var(--copper)}
+.hero-l p.lead{font-size:1.02rem;color:var(--ink-2);max-width:38ch}
+.meta{border:1px solid var(--line);background:var(--card)}
+.meta div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem .8rem;font-family:var(--mono);font-size:.72rem;border-bottom:1px dashed var(--hair)}
+.meta div:last-child{border-bottom:0}
+.meta dt{color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+.meta dd{font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:50px;padding:.8rem 1.5rem;font-weight:600;font-size:.92rem;text-decoration:none;border:1px solid var(--line);border-radius:var(--r);transition:transform .18s,background .18s,color .18s,box-shadow .18s;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+.btn-ink{background:var(--ink);color:var(--paper);box-shadow:4px 4px 0 var(--copper)}
+.btn-ink:hover{background:var(--green-2);box-shadow:2px 2px 0 var(--copper)}
+.btn-line{background:transparent}
+.btn-line:hover{background:var(--paper-2)}
+.btn-wa{background:var(--wa);color:#fff;border-color:var(--wa)}
+.btn-wa:hover{filter:brightness(.92)}
+.btn-green{background:var(--green);color:var(--paper);box-shadow:4px 4px 0 var(--gold)}
+.btn-green:hover{background:var(--green-2);box-shadow:2px 2px 0 var(--gold)}
+.hero-r{border-left:1px solid var(--line);background:var(--card);position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,5vw,4rem) clamp(1.2rem,4vw,3.5rem);overflow:hidden}
+.snellen{display:grid;gap:clamp(.7rem,2.2vw,1.4rem);text-align:center}
+.sn-row{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:1rem;border-bottom:1px dashed var(--hair);padding-bottom:clamp(.5rem,1.5vw,1rem)}
+.sn-row span{font-family:var(--serif);font-weight:900;letter-spacing:.06em;text-transform:uppercase;display:block}
+.sn-row i{font-style:normal;font-family:var(--mono);font-size:.62rem;color:var(--ink-3);white-space:nowrap}
+.sn-1 span{font-size:clamp(3.4rem,9vw,7.5rem);color:var(--ink)}
+.sn-2 span{font-size:clamp(2rem,5.4vw,4.3rem);color:var(--green)}
+.sn-3 span{font-size:clamp(1.2rem,3.2vw,2.4rem);color:var(--ink-2)}
+.sn-4 span{font-size:clamp(.8rem,1.8vw,1.15rem);letter-spacing:.28em;color:var(--copper)}
+.reticle{position:absolute;inset:0;pointer-events:none;opacity:.55}
+.reticle::before,.reticle::after{content:"";position:absolute;background:var(--hair)}
+.reticle::before{left:50%;top:0;bottom:0;width:1px}
+.reticle::after{top:50%;left:0;right:0;height:1px}
 
-/* ============ TICKER ============ */
-.ticker{background:var(--gold);color:var(--navy-900);font-family:'Montserrat',sans-serif;font-weight:600;font-size:.86rem;overflow:hidden;white-space:nowrap}
-.ticker-track{display:inline-flex;gap:2.5rem;padding:.65rem 0;align-items:center}
-.ticker-track span{display:inline-flex;align-items:center;gap:.5rem}
-.ticker-track .icon{width:16px;height:16px;stroke:var(--navy-900)}
-@media(prefers-reduced-motion:no-preference){.ticker-track{animation:scroll 26s linear infinite}}
-@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* ================= STRIP ================= */
+.strip{border-bottom:1px solid var(--line);background:var(--ink);color:var(--paper);overflow:hidden}
+.strip .in{display:flex;gap:3rem;white-space:nowrap;padding:.55rem 0;font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;width:max-content}
+.strip em{font-style:normal;color:#CBB77A}
+@media(prefers-reduced-motion:no-preference){.strip .in{animation:mq 30s linear infinite}}
+@keyframes mq{to{transform:translateX(-50%)}}
 
-/* ============ PRICING / PROMOS ============ */
-.promos{background:var(--bg-alt)}
-.promo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
-.promo{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.5rem;box-shadow:var(--shadow-sm);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s}
-.promo:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--primary-light)}
-.promo.featured{border-color:var(--gold);box-shadow:0 12px 34px rgba(201,169,110,.22)}
-.promo-badge{position:absolute;top:-13px;left:1.5rem;display:inline-flex;align-items:center;gap:.4rem;background:var(--primary);color:#fff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:.35rem .8rem;border-radius:100px}
-.promo.featured .promo-badge{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy-900)}
-.promo-badge .icon{width:14px;height:14px}
-.promo-ico{width:52px;height:52px;border-radius:13px;background:var(--primary-light);color:var(--primary);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem}
-.promo-ico .icon{width:27px;height:27px}
-.promo h3{font-size:1.15rem;margin-bottom:.35rem}
-.promo .price{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.9rem;color:var(--primary-dark);margin:.3rem 0}
-.promo .price small{font-size:.8rem;font-weight:600;color:var(--muted)}
-.promo p{font-size:.9rem;color:var(--muted);min-height:2.8em;margin-bottom:1.1rem}
-.promo .btn{width:100%}
+/* ================= SECTION SHELL ================= */
+.sec{border-bottom:1px solid var(--line)}
+.sec-hd{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1.6rem;padding-block:clamp(1.8rem,4vw,2.6rem)}
+.sec-hd .no{font-family:var(--mono);font-size:.72rem;color:var(--copper);letter-spacing:.1em}
+.sec-hd h2{font-size:clamp(1.7rem,4.4vw,2.9rem);font-weight:900}
+.sec-hd p{flex-basis:100%;color:var(--ink-2);max-width:60ch}
 
-/* ============ WHY US ============ */
-.why{background:linear-gradient(135deg,var(--navy),var(--navy-800));color:#fff}
-.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center}
-.why h2{color:#fff;font-size:clamp(1.6rem,4vw,2.3rem);margin:.7rem 0 1rem}
-.why p{color:rgba(255,255,255,.82);margin-bottom:1.5rem;max-width:46ch}
-.why-call{display:inline-flex;align-items:center;gap:.7rem;font-family:'Montserrat',sans-serif;font-weight:700;font-size:1.25rem;color:var(--gold)}
-.why-call .icon{stroke:var(--gold)}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
-.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.4rem;text-align:center}
-.stat .icon{width:30px;height:30px;stroke:var(--gold);margin:0 auto .6rem}
-.stat b{display:block;font-family:'Montserrat',sans-serif;font-size:1.9rem;font-weight:800;color:#fff;line-height:1}
-.stat span{font-size:.85rem;color:rgba(255,255,255,.75)}
+/* ================= LEDGER (PRECIOS) ================= */
+.ledger{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:clamp(.8rem,2.5vw,2rem);padding:1.05rem 0;border-bottom:1px dashed var(--hair);transition:background .18s;position:relative}
+.row:hover{background:var(--card)}
+.row .n{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);width:2.2rem}
+.row .what b{font-family:var(--serif);font-size:clamp(1.05rem,2.4vw,1.45rem);font-weight:700;display:block}
+.row .what small{color:var(--ink-2);font-size:.85rem}
+.row .price{font-family:var(--mono);font-weight:600;font-size:clamp(.95rem,2.2vw,1.2rem);white-space:nowrap;text-align:right}
+.row .price small{display:block;font-weight:400;font-size:.62rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+.row .go{min-height:44px;display:inline-flex;align-items:center;gap:.45rem;padding:.55rem 1rem;border:1px solid var(--line);border-radius:var(--r);font-size:.8rem;font-weight:600;text-decoration:none;background:var(--paper);transition:background .18s,color .18s;cursor:pointer}
+.row .go:hover{background:var(--ink);color:var(--paper)}
+.row.hot{background:var(--green-soft)}
+.row.hot:hover{background:#d2e0d6}
+.stamp{position:absolute;top:-1px;left:2.2rem;transform:translateY(-50%) rotate(-2deg);font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);border:1.5px solid var(--copper);padding:.18rem .5rem;background:var(--paper);border-radius:var(--r)}
+.ledger-note{font-family:var(--mono);font-size:.66rem;color:var(--ink-3);padding:.9rem 0 2.2rem;text-transform:uppercase;letter-spacing:.08em}
 
-/* ============ SERVICES ============ */
-.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.3rem}
-.serv{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s}
-.serv:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--primary-light)}
-.serv-ico{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;background:linear-gradient(135deg,var(--primary-light),#dcecf6);color:var(--primary-dark)}
-.serv-ico .icon{width:28px;height:28px}
-.serv h3{font-size:1.1rem;margin-bottom:.4rem}
-.serv p{font-size:.92rem;color:var(--muted)}
+/* ================= SERVICIOS INDEX ================= */
+.svc{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-bottom:clamp(2rem,5vw,3rem)}
+.svc article{border-bottom:1px dashed var(--hair);padding:1.15rem 1rem 1.15rem 0;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.svc article:nth-child(odd){border-right:1px solid var(--hair);padding-right:clamp(1rem,3vw,2.4rem)}
+.svc article:nth-child(even){padding-left:clamp(1rem,3vw,2.4rem)}
+.svc .n{font-family:var(--mono);font-size:.7rem;color:var(--copper);padding-top:.35rem}
+.svc h3{font-size:1.12rem;margin-bottom:.25rem}
+.svc p{font-size:.88rem;color:var(--ink-2)}
 
-/* ============ DOCTOR ============ */
-.doctor{background:var(--bg-alt)}
-.doctor .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:2.6rem;align-items:center}
-.doctor-card{background:linear-gradient(135deg,var(--navy),var(--primary-dark));border-radius:var(--radius-lg);padding:2.4rem;text-align:center;color:#fff;box-shadow:var(--shadow-lg)}
-.doctor-card img{width:150px;height:150px;object-fit:contain;margin:0 auto 1.1rem;filter:drop-shadow(0 10px 24px rgba(0,0,0,.35))}
-.doctor-card h3{color:#fff;font-size:1.35rem}
-.doctor-card .role{color:var(--gold);font-weight:600;font-size:.95rem;margin-top:.2rem}
-.doctor-badges{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.4rem}
-.doctor-badges div{display:flex;align-items:center;gap:.5rem;justify-content:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:.6rem .5rem;font-size:.78rem;font-weight:600}
-.doctor-badges .icon{width:16px;height:16px;stroke:var(--gold)}
-.doctor h2{font-size:clamp(1.6rem,4vw,2.3rem);margin:.6rem 0 1rem}
-.doctor-body>p{color:var(--text);margin-bottom:1.3rem}
-.cv{display:grid;gap:.85rem;margin-bottom:1.3rem}
-.cv li{display:flex;gap:.8rem;align-items:flex-start}
-.cv .icon{width:22px;height:22px;stroke:var(--primary);margin-top:.15rem}
-.cv b{color:var(--ink);font-weight:600}
-.mil{display:flex;gap:.8rem;align-items:flex-start;background:var(--gold-soft);border:1px solid #e6d6ac;border-left:4px solid var(--gold-dark);border-radius:10px;padding:1rem 1.1rem;margin-bottom:1.3rem}
-.mil .icon{stroke:var(--gold-dark);margin-top:.15rem}
-.mil p{font-size:.92rem;color:#5c4a24}
-.cedulas{font-size:.86rem;color:var(--muted);font-weight:600}
+/* ================= DOCTOR (DOSSIER OSCURO) ================= */
+.doc{background:var(--ink);color:var(--paper);border-bottom:1px solid var(--line)}
+.doc .sec-hd h2{color:var(--paper)}
+.doc .sec-hd p{color:#B9B4A6}
+.doc-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(1.6rem,4vw,3.5rem);padding-bottom:clamp(2.4rem,6vw,4rem)}
+.doc-card{border:1px solid #3A362C;background:#1A1811;padding:1.6rem;text-align:center;height:max-content}
+.doc-card img{width:130px;margin:0 auto 1rem;filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))}
+.doc-card h3{color:var(--paper);font-size:1.25rem}
+.doc-card .rol{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:#CBB77A;margin-top:.3rem}
+.doc-tags{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:1.2rem}
+.doc-tags span{border:1px dashed #4A4536;font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;padding:.5rem .3rem;color:#D8D2C0}
+.srv-rec{display:grid;gap:0;border-left:1px solid #4A4536}
+.rec{position:relative;padding:0 0 1.6rem 1.6rem}
+.rec:last-child{padding-bottom:0}
+.rec::before{content:"";position:absolute;left:-5px;top:.45rem;width:9px;height:9px;background:var(--paper);border:2px solid var(--copper);border-radius:50%}
+.rec .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:#CBB77A}
+.rec b{font-family:var(--serif);font-size:1.15rem;display:block;margin:.15rem 0 .1rem;color:var(--paper)}
+.rec p{font-size:.9rem;color:#B9B4A6;max-width:56ch}
+.rec.mil{background:linear-gradient(90deg,rgba(203,183,122,.08),transparent);border-radius:var(--r)}
+.ced{font-family:var(--mono);font-size:.7rem;color:#B9B4A6;border-top:1px dashed #4A4536;margin-top:1.6rem;padding-top:1rem;letter-spacing:.05em}
 
-/* ============ TESTIMONIALS ============ */
-.tst-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem}
-.tst{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem;box-shadow:var(--shadow-sm)}
-.stars{display:flex;gap:.15rem;color:var(--gold);margin-bottom:.9rem}
-.stars .icon{width:19px;height:19px;fill:var(--gold);stroke:var(--gold)}
-.tst blockquote{font-size:.96rem;color:var(--text);font-style:italic;margin-bottom:1.2rem}
-.tst-person{display:flex;align-items:center;gap:.8rem}
-.tst-avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.95rem}
-.tst-person b{display:block;color:var(--ink);font-size:.95rem}
-.tst-person span{font-size:.82rem;color:var(--muted)}
+/* ================= TESTIMONIOS ================= */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.5vw,1.6rem);padding-bottom:clamp(2.4rem,6vw,3.5rem)}
+.note{border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column}
+.note-tab{border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:.5rem .9rem;font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.note-tab .st{color:var(--gold);letter-spacing:.2em}
+.note blockquote{padding:1.1rem .9rem;font-size:.92rem;color:var(--ink-2);flex:1}
+.note figcaption{border-top:1px dashed var(--hair);padding:.7rem .9rem;font-family:var(--mono);font-size:.7rem}
+.note figcaption b{display:block;font-weight:600}
+.note figcaption span{color:var(--ink-3)}
 
-/* ============ CTA BANNER ============ */
-.cta{background:linear-gradient(135deg,var(--primary),var(--teal));color:#fff;text-align:center}
-.cta h2{color:#fff;font-size:clamp(1.7rem,4vw,2.5rem);margin-bottom:1.4rem}
-.cta-actions{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
+/* ================= AGENDAR (WIZARD) ================= */
+.book{background:var(--green);color:var(--paper);border-bottom:1px solid var(--line)}
+.book .sec-hd h2{color:var(--paper)}
+.book .sec-hd p{color:#C6D4C9}
+.book .sec-hd .no{color:#CBB77A}
+.wiz{background:var(--paper);color:var(--ink);border:1px solid var(--line);box-shadow:8px 8px 0 rgba(0,0,0,.25);margin-bottom:clamp(2.4rem,6vw,4rem);border-radius:var(--r)}
+.wiz-top{display:flex;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase}
+.wiz-top span{flex:1;padding:.7rem .5rem;text-align:center;color:var(--ink-3);border-right:1px solid var(--hair);display:flex;align-items:center;justify-content:center;gap:.45rem}
+.wiz-top span:last-child{border-right:0}
+.wiz-top span.on{background:var(--ink);color:var(--paper)}
+.wiz-top span.done{color:var(--green)}
+.wiz-body{padding:clamp(1.2rem,3.5vw,2.2rem)}
+.wiz h3{font-size:1.3rem;margin-bottom:1.1rem}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.7rem}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0}
+.opt label{display:flex;flex-direction:column;gap:.2rem;border:1px solid var(--line);border-radius:var(--r);padding:.8rem .9rem;min-height:64px;cursor:pointer;background:var(--card);transition:background .18s,box-shadow .18s;font-size:.9rem}
+.opt label b{font-weight:600}
+.opt label small{font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
+.opt input:checked+label{background:var(--green);color:var(--paper);box-shadow:3px 3px 0 var(--gold)}
+.opt input:checked+label small{color:#CBD8CE}
+.opt input:focus-visible+label{outline:3px solid var(--copper);outline-offset:2px}
+.days{display:flex;gap:.55rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin}
+.day{min-width:86px;min-height:74px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);font-family:var(--mono);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;cursor:pointer;transition:background .18s,box-shadow .18s}
+.day small{font-size:.6rem;letter-spacing:.12em;color:var(--ink-3)}
+.day b{font-size:1.15rem;font-weight:600}
+.day em{font-style:normal;font-size:.6rem;letter-spacing:.12em;color:var(--ink-3)}
+.day.on{background:var(--green);color:var(--paper);box-shadow:3px 3px 0 var(--gold)}
+.day.on small,.day.on em{color:#CBD8CE}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:.5rem;margin-top:1rem}
+.slot{border:1px solid var(--line);border-radius:var(--r);background:var(--card);font-family:var(--mono);font-size:.8rem;min-height:44px;cursor:pointer;transition:background .15s}
+.slot:hover{background:var(--paper-2)}
+.slot.on{background:var(--ink);color:var(--paper)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field{display:flex;flex-direction:column;gap:.3rem}
+.field.full{grid-column:1/-1}
+.field label{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.field input,.field textarea{border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:.75rem .8rem;min-height:48px}
+.field textarea{min-height:80px;resize:vertical}
+.field .err{display:none;color:var(--err);font-size:.74rem;font-weight:600}
+.field.bad input{border-color:var(--err)}
+.field.bad .err{display:block}
+.wiz-ft{display:flex;justify-content:space-between;gap:.8rem;border-top:1px solid var(--line);padding:1rem clamp(1.2rem,3.5vw,2.2rem);flex-wrap:wrap}
+.hint{font-family:var(--mono);font-size:.66rem;color:var(--ink-3);align-self:center;text-transform:uppercase;letter-spacing:.06em}
+.sum{border:1px dashed var(--line);background:var(--card);padding:1.1rem;font-family:var(--mono);font-size:.8rem;display:grid;gap:.45rem;position:relative}
+.sum div{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dotted var(--hair);padding-bottom:.4rem}
+.sum div:last-child{border:0;padding:0}
+.sum dt{color:var(--ink-3);text-transform:uppercase;font-size:.64rem;letter-spacing:.1em;padding-top:.15rem}
+.sum dd{text-align:right;font-weight:600}
+.sum .seal{position:absolute;right:.9rem;top:-.9rem;transform:rotate(3deg);border:2px solid var(--green);color:var(--green);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;padding:.25rem .6rem;background:var(--paper)}
+.send{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.2rem}
+.ok-note{margin-top:.9rem;font-size:.8rem;color:var(--ink-2)}
+.step{display:none}
+.step.on{display:block}
 
-/* ============ CONTACT ============ */
-.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem}
-.contact-list{display:grid;gap:1.2rem;margin:1.4rem 0 1.6rem}
-.ci{display:flex;gap:1rem;align-items:flex-start}
-.ci-ico{width:46px;height:46px;border-radius:11px;background:var(--primary-light);color:var(--primary-dark);display:flex;align-items:center;justify-content:center;flex:none}
-.ci-ico .icon{width:23px;height:23px}
-.ci b{display:block;color:var(--ink);font-family:'Montserrat',sans-serif;font-size:.95rem;margin-bottom:.15rem}
-.ci p,.ci a{color:var(--muted);font-size:.94rem}
-.ci a:hover{color:var(--primary)}
-.socials{display:flex;flex-wrap:wrap;gap:.7rem}
-.socials a{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border:1px solid var(--line);border-radius:100px;font-size:.85rem;font-weight:600;color:var(--ink);transition:.2s}
-.socials a:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
-.socials .icon{width:18px;height:18px}
-.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:340px;border:1px solid var(--line)}
-.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+/* ================= CONTACTO ================= */
+.con{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.6rem,4vw,3rem);padding-bottom:clamp(2.4rem,6vw,4rem)}
+.con-list div{display:grid;grid-template-columns:130px 1fr;gap:1rem;padding:.85rem 0;border-bottom:1px dashed var(--hair);font-size:.92rem}
+.con-list dt{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding-top:.25rem}
+.con-list a{text-decoration-color:var(--copper)}
+.con-list a:hover{color:var(--copper)}
+.geo{border:1px solid var(--line);background:var(--ink);color:var(--paper);padding:1.6rem;display:flex;flex-direction:column;gap:1rem;height:max-content}
+.geo .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:#CBB77A}
+.geo b{font-family:var(--serif);font-size:1.3rem;line-height:1.25}
+.geo p{font-size:.85rem;color:#B9B4A6}
+.socials{display:flex;flex-wrap:wrap;gap:.5rem}
+.socials a{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--hair);border-radius:var(--r);padding:.55rem .85rem;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;min-height:44px;transition:background .18s,color .18s}
+.socials a:hover{background:var(--ink);color:var(--paper)}
 
-/* ============ FOOTER ============ */
-.footer{background:var(--navy-900);color:rgba(255,255,255,.7);padding:2.6rem 0 1.6rem}
-.footer .wrap{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center}
-.footer .brand-name{color:#fff}
-.footer-links{display:flex;flex-wrap:wrap;gap:1.2rem}
-.footer-links a{font-size:.88rem;color:rgba(255,255,255,.72)}
-.footer-links a:hover{color:var(--gold)}
-.footer-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:1.6rem;padding-top:1.2rem;text-align:center;font-size:.8rem;color:rgba(255,255,255,.55)}
+/* ================= FOOTER ================= */
+.ft{background:var(--ink);color:#B9B4A6}
+.ft .wrap{display:flex;flex-wrap:wrap;gap:1rem 2.5rem;justify-content:space-between;align-items:center;padding-block:1.4rem}
+.ft nav{display:flex;flex-wrap:wrap;gap:1.2rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase}
+.ft nav a{text-decoration:none}
+.ft nav a:hover{color:#CBB77A}
+.ft .legal{width:100%;border-top:1px solid #3A362C;padding-top:1rem;font-size:.72rem;font-family:var(--mono)}
 
-/* ============ WHATSAPP FLOAT ============ */
-.wa-float{position:fixed;right:1.1rem;bottom:1.1rem;z-index:200;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.45);transition:transform .2s}
-.wa-float:hover{transform:scale(1.08)}
-.wa-float .icon{width:32px;height:32px;stroke:#fff;fill:none}
-@media(prefers-reduced-motion:no-preference){.wa-float{animation:pulse 2.4s ease-in-out infinite}}
-@keyframes pulse{0%,100%{box-shadow:0 8px 24px rgba(37,211,102,.45)}50%{box-shadow:0 8px 24px rgba(37,211,102,.45),0 0 0 12px rgba(37,211,102,.10)}}
+/* ================= FLOAT WA ================= */
+.waf{position:fixed;right:1rem;bottom:1rem;z-index:80;width:58px;height:58px;background:var(--wa);color:#fff;border:1px solid var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;box-shadow:4px 4px 0 var(--ink);transition:transform .18s}
+.waf:hover{transform:translate(-2px,-2px)}
+.waf .ico{width:28px;height:28px}
 
-/* ============ REVEAL ============ */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}*{scroll-behavior:auto!important}}
+/* ================= REVEAL ================= */
+.rv{opacity:0;transform:translateY(10px);transition:opacity .35s ease-out,transform .35s ease-out}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.strip .in{animation:none}*{scroll-behavior:auto!important}}
 
-/* ============ RESPONSIVE ============ */
-@media(max-width:900px){
-  .hero .wrap{grid-template-columns:1fr;text-align:center}
-  .hero-lead{margin-inline:auto}
-  .hero-cred,.hero-actions{justify-content:center}
-  .hero-visual{order:-1}
-  .hero-visual img{width:min(220px,60%)}
-  .why .wrap,.doctor .wrap,.contact .wrap{grid-template-columns:1fr}
-  .doctor-card{max-width:420px;margin:0 auto}
+/* ================= RESPONSIVE ================= */
+@media(max-width:980px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-r{border-left:0;border-top:1px solid var(--line);min-height:46vh}
+  .doc-grid{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  .con{grid-template-columns:1fr}
 }
 @media(max-width:760px){
-  .nav-links,.nav .nav-cta .btn span{display:none}
-  .nav-toggle{display:flex}
-  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:#fff;border-bottom:1px solid var(--line);padding:.6rem;gap:.2rem;box-shadow:var(--shadow)}
-  .nav-links.open a{padding:.9rem 1rem}
-  .topbar-group.secondary{display:none}
-}
-@media(max-width:480px){
-  .stats{grid-template-columns:1fr}
-  .doctor-badges{grid-template-columns:1fr}
-  .promo .price{font-size:1.7rem}
+  .hd .wrap{flex-wrap:wrap}
+  .brand{width:100%;border-bottom:1px solid var(--hair)}
+  .nav{width:100%}
+  .nav a{border-left:0;border-right:1px solid var(--hair);padding:0 .85rem;min-height:48px}
+  .svc{grid-template-columns:1fr}
+  .svc article:nth-child(odd){border-right:0;padding-right:0}
+  .svc article:nth-child(even){padding-left:0}
+  .row{grid-template-columns:auto minmax(0,1fr)}
+  .row .price{grid-column:2;text-align:left}
+  .row .go{grid-column:2;justify-self:start}
+  .fields{grid-template-columns:1fr}
+  .wiz-top span i{display:none}
 }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
 
-<!-- SVG ICON SPRITE -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
-    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></symbol>
-    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9l4-6Z"/><path d="M2 9h20M12 3 8 9l4 12 4-12-4-6"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
-    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
-    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
-    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z"/></symbol>
-    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/></symbol>
-    <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 2.7 6.3 9a8 8 0 1 0 11.4 0L12 2.7Z"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
-    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.2-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 8.8c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.2 0 .4 0 .5l-.5.6c-.1.2-.2.3 0 .6a6 6 0 0 0 2.6 2.3c.3.1.4.1.6-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.4 0 .5-.2 1.4-.6 1.6-.4.3-1.4.6-2.6.2a8 8 0 0 1-4.7-4.4c-.4-1-.4-1.9-.4-2.2Z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></symbol>
-    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.9 7 22l5-3 5 3-1.2-8.1"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
-    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
-    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></symbol>
-    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
-    <symbol id="i-medal" viewBox="0 0 24 24"><path d="M7.2 2h9.6l-3 6H10.2l-3-6Z"/><circle cx="12" cy="15" r="6"/><path d="M12 12v3l2 1"/></symbol>
-    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-9.5-9A5 5 0 0 1 12 5a5 5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 9V7c0-1 .5-2 2-2h2V2h-3c-3 0-4 2-4 4v3H8v3h3v9h3v-9h3l1-3h-4Z"/></symbol>
-    <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-tt" viewBox="0 0 24 24"><path d="M15 3c.3 2.3 1.9 4 4 4.3V10c-1.5 0-2.9-.5-4-1.3V15a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 1 .1V13a2.5 2.5 0 1 0 1.8 2.4V3H15Z"/></symbol>
-  </defs>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="s-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="s-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="1"/><path d="M16 2v4M8 2v4M3 9h18"/></symbol>
+<symbol id="s-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+<symbol id="s-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.2-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 8.8c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.2 0 .4 0 .5l-.5.6c-.1.2-.2.3 0 .6a6 6 0 0 0 2.6 2.3c.3.1.4.1.6-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.4 0 .5-.2 1.4-.6 1.6-.4.3-1.4.6-2.6.2a8 8 0 0 1-4.7-4.4c-.4-1-.4-1.9-.4-2.2Z"/></symbol>
+<symbol id="s-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="s-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="s-dl" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></symbol>
+<symbol id="s-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+</defs>
 </svg>
 
-<!-- ============ TOPBAR ============ -->
-<div class="topbar">
+<!-- FILE BAR -->
+<div class="filebar" role="complementary">
   <div class="wrap">
-    <div class="topbar-group">
-      <span class="topbar-item"><svg class="icon"><use href="#i-pin"/></svg> Av. Insurgentes Sur 1602, Consultorio 402, Miguel Hidalgo, CDMX</span>
-    </div>
-    <div class="topbar-group secondary">
-      <span class="topbar-item"><svg class="icon"><use href="#i-phone"/></svg> <a href="tel:+525555458811">(55) 5545 8811</a></span>
-      <span class="topbar-item"><svg class="icon"><use href="#i-clock"/></svg> Lun–Vie 9:00–19:00 · Sáb 9:00–14:00</span>
-    </div>
+    <span><b>EXP-OFT/CDMX</b> · Av. Insurgentes Sur 1602 — 402</span>
+    <span>TEL <a href="tel:+525555458811">(55) 5545 8811</a> · <a href="tel:+525541881244">(55) 4188 1244</a></span>
+    <span>LUN–VIE 09–19 H · SÁB 09–14 H</span>
   </div>
 </div>
 
-<!-- ============ NAV ============ -->
-<header class="nav">
+<!-- HEADER -->
+<header class="hd">
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="Inicio — Dr. Juan Daniel de la Torre Tovar">
-      <img src="assets/logo.png" alt="Logo de la clínica del Dr. Juan Daniel de la Torre Tovar">
-      <span class="brand-txt">
-        <span class="brand-name">Dr. de la Torre Tovar</span>
-        <span class="brand-sub">Clínica Oftalmológica · CDMX</span>
-      </span>
+    <a class="brand" href="#inicio">
+      <img src="assets/logo.png" alt="Emblema del Dr. Juan Daniel de la Torre Tovar">
+      <span><b>de la Torre Tovar</b><small>Oftalmología · CDMX</small></span>
     </a>
-    <nav class="nav-links" id="menu" aria-label="Navegación principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#promociones">Cirugías</a>
-      <a href="#nosotros">El Doctor</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
+    <nav class="nav" aria-label="Índice">
+      <a href="#procedimientos"><i>01</i>Procedimientos</a>
+      <a href="#servicios"><i>02</i>Servicios</a>
+      <a href="#doctor"><i>03</i>El Doctor</a>
+      <a href="#testimonios"><i>04</i>Notas</a>
+      <a href="#contacto"><i>05</i>Contacto</a>
+      <a class="cta" href="#agendar"><i>→</i>Agendar cita</a>
     </nav>
-    <div class="nav-cta">
-      <a class="btn btn-primary" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita%20oftalmológica" target="_blank" rel="noopener">
-        <svg class="icon"><use href="#i-cal"/></svg><span>Agendar Cita</span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
-        <svg class="icon"><use href="#i-menu"/></svg>
-      </button>
-    </div>
   </div>
 </header>
 
 <main id="main">
 
-<!-- ============ HERO ============ -->
+<!-- HERO -->
 <section class="hero" id="inicio">
   <div class="wrap">
-    <div class="hero-content">
-      <span class="eyebrow hero-eyebrow"><svg class="icon"><use href="#i-award"/></svg> Oftalmólogo Certificado</span>
-      <h1>¡Adiós Lentes! <span>Cuida tu visión</span> con el mejor especialista</h1>
-      <p class="hero-lead">Clínica especializada en cirugías oculares con tecnología láser de última generación. Más de 15 años devolviendo la visión clara a miles de pacientes.</p>
-      <div class="hero-cred">
-        <span class="cred-chip"><svg class="icon"><use href="#i-shield"/></svg> Cédula Prof. 1742564</span>
-        <span class="cred-chip"><svg class="icon"><use href="#i-medal"/></svg> Cédula Esp. 4011033</span>
-        <span class="cred-chip"><svg class="icon"><use href="#i-cap"/></svg> U.A.N.L. · C.M.N.</span>
-      </div>
-      <div class="hero-actions">
-        <a class="btn btn-wa" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg> Agendar por WhatsApp</a>
-        <a class="btn btn-outline" href="tel:+525555458811"><svg class="icon"><use href="#i-phone"/></svg> Llamar ahora</a>
+    <div class="hero-l">
+      <p class="tag">Expediente abierto · Oftalmólogo certificado</p>
+      <h1 class="sr">Ver bien es vivir mejor. Agenda tu valoración hoy.</h1>
+      <p class="lead">Cirugía ocular con láser de última generación. Más de 15 años devolviendo visión clara con la disciplina y precisión de la sanidad militar.</p>
+      <dl class="meta">
+        <div><dt>Céd. Profesional</dt><dd class="mono">1742564</dd></div>
+        <div><dt>Céd. Especialidad</dt><dd class="mono">4011033</dd></div>
+        <div><dt>Formación</dt><dd class="mono">U.A.N.L. · C.M.N. IMSS · EE.UU.</dd></div>
+        <div><dt>Pacientes</dt><dd class="mono">+8,000 · 98% satisfacción</dd></div>
+      </dl>
+      <div class="hero-cta">
+        <a class="btn btn-ink" href="#agendar"><svg class="ico"><use href="#s-cal"/></svg>Agendar valoración</a>
+        <a class="btn btn-line" href="https://wa.me/525555458811?text=Hola,%20quiero%20información" target="_blank" rel="noopener"><svg class="ico"><use href="#s-wa"/></svg>WhatsApp</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <span class="ring" aria-hidden="true"></span>
-      <img src="assets/logo.png" alt="Emblema de la clínica del Dr. Juan Daniel de la Torre Tovar">
+    <div class="hero-r" aria-hidden="true">
+      <div class="reticle"></div>
+      <div class="snellen">
+        <div class="sn-row sn-1"><span>Ver</span><i>20/200</i></div>
+        <div class="sn-row sn-2"><span>bien es</span><i>20/100</i></div>
+        <div class="sn-row sn-3"><span>vivir mejor</span><i>20/40</i></div>
+        <div class="sn-row sn-4"><span>agenda tu valoración hoy</span><i>20/20</i></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ TICKER ============ -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <span><svg class="icon"><use href="#i-heart"/></svg> Dr. Juan Daniel de la Torre Tovar · Oftalmólogo</span>
-    <span><svg class="icon"><use href="#i-cal"/></svg> ¡Agenda tu consulta hoy!</span>
-    <span><svg class="icon"><use href="#i-pin"/></svg> Polanco, CDMX</span>
-    <span><svg class="icon"><use href="#i-heart"/></svg> Dr. Juan Daniel de la Torre Tovar · Oftalmólogo</span>
-    <span><svg class="icon"><use href="#i-cal"/></svg> ¡Agenda tu consulta hoy!</span>
-    <span><svg class="icon"><use href="#i-pin"/></svg> Polanco, CDMX</span>
+<!-- STRIP -->
+<div class="strip" aria-hidden="true">
+  <div class="in">
+    <span>LASIK <em>$9,700</em> ambos ojos</span><span>Cataratas <em>$12,900</em> por ojo</span><span>Carnosidad <em>$8,250</em></span><span>Cross-Linking <em>$9,500</em></span><span>Glaucoma <em>desde $19,500</em></span><span>Polanco · CDMX</span>
+    <span>LASIK <em>$9,700</em> ambos ojos</span><span>Cataratas <em>$12,900</em> por ojo</span><span>Carnosidad <em>$8,250</em></span><span>Cross-Linking <em>$9,500</em></span><span>Glaucoma <em>desde $19,500</em></span><span>Polanco · CDMX</span>
   </div>
 </div>
 
-<!-- ============ PROMOS / PRICING ============ -->
-<section class="section promos" id="promociones">
+<!-- PROCEDIMIENTOS / LEDGER -->
+<section class="sec" id="procedimientos">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><svg class="icon"><use href="#i-sparkle"/></svg> Promociones Vigentes</span>
-      <h2>Cirugías para los ojos con precios accesibles</h2>
-      <p>Procedimientos con tecnología de vanguardia y precios transparentes. Consulta condiciones al agendar.</p>
-    </div>
-    <div class="promo-grid">
-      <article class="promo featured reveal">
-        <span class="promo-badge"><svg class="icon"><use href="#i-star"/></svg> Promoción Especial</span>
-        <div class="promo-ico"><svg class="icon"><use href="#i-zap"/></svg></div>
-        <h3>Cirugía LASIK</h3>
-        <div class="price">$9,700 <small>ambos ojos</small></div>
-        <p>Corrige Miopía, Astigmatismo e Hipermetropía.</p>
-        <a class="btn btn-gold" href="https://wa.me/525555458811?text=Quiero%20información%20sobre%20la%20Cirugía%20LASIK" target="_blank" rel="noopener">Más información</a>
-      </article>
-      <article class="promo reveal">
-        <span class="promo-badge">Promoción</span>
-        <div class="promo-ico"><svg class="icon"><use href="#i-gem"/></svg></div>
-        <h3>Cirugía de Cataratas</h3>
-        <div class="price">$12,900 <small>por ojo</small></div>
-        <p>Libérate de la ceguera por cataratas.</p>
-        <a class="btn btn-ghost" href="https://wa.me/525555458811?text=Quiero%20información%20sobre%20la%20Cirugía%20de%20Cataratas" target="_blank" rel="noopener">Más información</a>
-      </article>
-      <article class="promo reveal">
-        <span class="promo-badge">Promoción</span>
-        <div class="promo-ico"><svg class="icon"><use href="#i-sparkle"/></svg></div>
-        <h3>Cirugía de Carnosidad</h3>
-        <div class="price">$8,250 <small>por carnosidad</small></div>
-        <p>Elimina la carnosidad en el ojo (Pterigión).</p>
-        <a class="btn btn-ghost" href="https://wa.me/525555458811?text=Quiero%20información%20sobre%20la%20Cirugía%20de%20Carnosidad" target="_blank" rel="noopener">Más información</a>
-      </article>
-      <article class="promo reveal">
-        <span class="promo-badge">Promoción</span>
-        <div class="promo-ico"><svg class="icon"><use href="#i-leaf"/></svg></div>
-        <h3>Cross-Linking</h3>
-        <div class="price">$9,500 <small>ambos ojos</small></div>
-        <p>Detiene el avance del Queratocono.</p>
-        <a class="btn btn-ghost" href="https://wa.me/525555458811?text=Quiero%20información%20sobre%20Cross-Linking" target="_blank" rel="noopener">Más información</a>
-      </article>
-      <article class="promo reveal">
-        <span class="promo-badge">Promoción</span>
-        <div class="promo-ico"><svg class="icon"><use href="#i-shield"/></svg></div>
-        <h3>Cirugía de Glaucoma</h3>
-        <div class="price">Desde $19,500</div>
-        <p>Reduce la presión intraocular y protege tu nervio óptico.</p>
-        <a class="btn btn-ghost" href="https://wa.me/525555458811?text=Quiero%20información%20sobre%20la%20Cirugía%20de%20Glaucoma" target="_blank" rel="noopener">Más información</a>
-      </article>
-      <article class="promo reveal">
-        <span class="promo-badge">Consulta</span>
-        <div class="promo-ico"><svg class="icon"><use href="#i-eye"/></svg></div>
-        <h3>Revisión Oftalmológica</h3>
-        <div class="price">Consulta</div>
-        <p>Diagnóstico completo, fondo de ojo y prescripción óptica.</p>
-        <a class="btn btn-ghost" href="https://wa.me/525555458811?text=Quiero%20agendar%20una%20Revisión%20Oftalmológica" target="_blank" rel="noopener">Agendar</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY US ============ -->
-<section class="section why">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow" style="color:var(--gold)"><svg class="icon" style="stroke:var(--gold)"><use href="#i-award"/></svg> ¿Por qué elegirnos?</span>
-      <h2>Más de 15 años de experiencia</h2>
-      <p>Somos la mejor opción para brindar solución a tu salud visual. Contamos con oftalmólogo certificado, tecnología de vanguardia y un equipo dedicado a tu bienestar.</p>
-      <a class="why-call" href="tel:+525555458811"><svg class="icon"><use href="#i-phone"/></svg> Agenda hoy: (55) 5545 8811</a>
-    </div>
-    <div class="stats reveal">
-      <div class="stat"><svg class="icon"><use href="#i-eye"/></svg><b>15+</b><span>Años de experiencia</span></div>
-      <div class="stat"><svg class="icon"><use href="#i-users"/></svg><b>8k+</b><span>Pacientes atendidos</span></div>
-      <div class="stat"><svg class="icon"><use href="#i-star"/></svg><b>98%</b><span>Satisfacción</span></div>
-      <div class="stat"><svg class="icon"><use href="#i-activity"/></svg><b>6+</b><span>Especialidades</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SERVICES ============ -->
-<section class="section" id="servicios">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><svg class="icon"><use href="#i-eye"/></svg> Atención integral</span>
-      <h2>Todos nuestros servicios oftalmológicos</h2>
-      <p>Diagnóstico, tratamiento y cirugía para adultos y niños, con equipo de última generación.</p>
-    </div>
-    <div class="serv-grid">
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-eye"/></svg></div><h3>Consulta Oftalmológica</h3><p>Revisión completa, agudeza visual, fondo de ojo y diagnóstico. Adultos y niños.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-zap"/></svg></div><h3>Cirugía LASIK con Láser</h3><p>Corrección definitiva de miopía, hipermetropía y astigmatismo.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-gem"/></svg></div><h3>Cataratas con Lente Intraocular</h3><p>Cirugía con implante de lente premium. Recupera la visión nítida.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-shield"/></svg></div><h3>Glaucoma</h3><p>Detección temprana y tratamiento médico-quirúrgico del glaucoma.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-activity"/></svg></div><h3>Retina y Vítreo</h3><p>Retinopatía diabética, desprendimiento de retina. OCT de alta resolución.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-leaf"/></svg></div><h3>Cross-Linking (Queratocono)</h3><p>Detiene la progresión del queratocono y estabiliza la córnea.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-sparkle"/></svg></div><h3>Pterigión (Carnosidad)</h3><p>Extirpación quirúrgica de la carnosidad que cubre la córnea.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-scan"/></svg></div><h3>Limpieza de Lente Intraocular</h3><p>Láser YAG para opacificación de cápsula posterior post-catarata.</p></article>
-      <article class="serv reveal"><div class="serv-ico"><svg class="icon"><use href="#i-droplet"/></svg></div><h3>Ojo Seco y Párpados</h3><p>Tratamiento del síndrome de ojo seco, blefaritis y cirugía de párpados.</p></article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DOCTOR ============ -->
-<section class="section doctor" id="nosotros">
-  <div class="wrap">
-    <div class="doctor-card reveal">
-      <img src="assets/logo.png" alt="Emblema del Dr. Juan Daniel de la Torre Tovar">
-      <h3>Dr. Juan Daniel de la Torre Tovar</h3>
-      <div class="role">Oftalmólogo Especialista</div>
-      <div class="doctor-badges">
-        <div><svg class="icon"><use href="#i-check"/></svg> CMO Certificado</div>
-        <div><svg class="icon"><use href="#i-award"/></svg> +15 años</div>
-        <div><svg class="icon"><use href="#i-zap"/></svg> Tecnología Láser</div>
-        <div><svg class="icon"><use href="#i-users"/></svg> +8,000 pacientes</div>
+    <header class="sec-hd rv">
+      <span class="no">01 / TARIFARIO</span>
+      <h2>Procedimientos y promociones</h2>
+      <p>Precios transparentes, sin letra pequeña. Cada procedimiento incluye valoración con el especialista.</p>
+    </header>
+    <div class="ledger">
+      <div class="row hot rv">
+        <span class="stamp">Promoción especial</span>
+        <span class="n mono">P-01</span>
+        <span class="what"><b>Cirugía LASIK</b><small>Corrige miopía, astigmatismo e hipermetropía</small></span>
+        <span class="price">$9,700<small>ambos ojos</small></span>
+        <button class="go" data-proc="Cirugía LASIK">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
+      </div>
+      <div class="row rv">
+        <span class="n mono">P-02</span>
+        <span class="what"><b>Cirugía de Cataratas</b><small>Lente intraocular · libérate de la ceguera por cataratas</small></span>
+        <span class="price">$12,900<small>por ojo</small></span>
+        <button class="go" data-proc="Cirugía de Cataratas">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
+      </div>
+      <div class="row rv">
+        <span class="n mono">P-03</span>
+        <span class="what"><b>Cirugía de Carnosidad</b><small>Extirpación de pterigión que cubre la córnea</small></span>
+        <span class="price">$8,250<small>por carnosidad</small></span>
+        <button class="go" data-proc="Cirugía de Carnosidad (Pterigión)">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
+      </div>
+      <div class="row rv">
+        <span class="n mono">P-04</span>
+        <span class="what"><b>Cross-Linking</b><small>Detiene el avance del queratocono</small></span>
+        <span class="price">$9,500<small>ambos ojos</small></span>
+        <button class="go" data-proc="Cross-Linking">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
+      </div>
+      <div class="row rv">
+        <span class="n mono">P-05</span>
+        <span class="what"><b>Cirugía de Glaucoma</b><small>Reduce la presión intraocular, protege el nervio óptico</small></span>
+        <span class="price">$19,500<small>desde</small></span>
+        <button class="go" data-proc="Cirugía de Glaucoma">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
+      </div>
+      <div class="row rv">
+        <span class="n mono">P-06</span>
+        <span class="what"><b>Revisión Oftalmológica</b><small>Diagnóstico completo, fondo de ojo y prescripción óptica</small></span>
+        <span class="price">Consulta<small>&nbsp;</small></span>
+        <button class="go" data-proc="Revisión Oftalmológica">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
       </div>
     </div>
-    <div class="doctor-body reveal">
-      <span class="eyebrow"><svg class="icon"><use href="#i-award"/></svg> Conoce al especialista</span>
-      <h2>Trayectoria, disciplina y precisión</h2>
-      <p>Con más de 15 años dedicados a la salud visual, el Dr. de la Torre Tovar ha realizado miles de procedimientos exitosos con los más altos estándares de calidad y tecnología de vanguardia.</p>
-      <ul class="cv">
-        <li><svg class="icon"><use href="#i-cap"/></svg><span><b>Médico Cirujano</b> — Universidad Autónoma de Nuevo León (U.A.N.L.), con mención honorífica.</span></li>
-        <li><svg class="icon"><use href="#i-medal"/></svg><span><b>Especialidad en Oftalmología</b> — Centro Médico Nacional (C.M.N.), IMSS.</span></li>
-        <li><svg class="icon"><use href="#i-star"/></svg><span><b>Alta Especialidad en Cirugía Refractiva y Retina</b> — Formación en EE.UU.</span></li>
-      </ul>
-      <div class="mil">
-        <svg class="icon"><use href="#i-shield"/></svg>
-        <p>Con formación y trayectoria en el ámbito de la <b>sanidad militar</b>, aporta la disciplina, el rigor y la vocación de servicio que distinguen cada uno de sus procedimientos.</p>
-      </div>
-      <p class="cedulas">Cédula Profesional: 1742564 &nbsp;|&nbsp; Cédula de Especialidad: 4011033</p>
+    <p class="ledger-note">— Consulta condiciones al agendar · Precios en MXN —</p>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="sec" id="servicios">
+  <div class="wrap">
+    <header class="sec-hd rv">
+      <span class="no">02 / ÍNDICE CLÍNICO</span>
+      <h2>Atención integral de la visión</h2>
+      <p>Diagnóstico, tratamiento y cirugía para adultos y niños con equipo de última generación.</p>
+    </header>
+    <div class="svc">
+      <article class="rv"><span class="n">i.</span><div><h3>Consulta Oftalmológica</h3><p>Revisión completa, agudeza visual, fondo de ojo y diagnóstico. Adultos y niños.</p></div></article>
+      <article class="rv"><span class="n">ii.</span><div><h3>Cirugía LASIK con Láser</h3><p>Corrección definitiva de miopía, hipermetropía y astigmatismo.</p></div></article>
+      <article class="rv"><span class="n">iii.</span><div><h3>Cataratas con Lente Intraocular</h3><p>Implante de lente premium. Recupera la visión nítida.</p></div></article>
+      <article class="rv"><span class="n">iv.</span><div><h3>Glaucoma</h3><p>Detección temprana y tratamiento médico-quirúrgico.</p></div></article>
+      <article class="rv"><span class="n">v.</span><div><h3>Retina y Vítreo</h3><p>Retinopatía diabética, desprendimiento de retina. OCT de alta resolución.</p></div></article>
+      <article class="rv"><span class="n">vi.</span><div><h3>Cross-Linking (Queratocono)</h3><p>Detiene la progresión del queratocono y estabiliza la córnea.</p></div></article>
+      <article class="rv"><span class="n">vii.</span><div><h3>Pterigión (Carnosidad)</h3><p>Extirpación quirúrgica de la carnosidad que cubre la córnea.</p></div></article>
+      <article class="rv"><span class="n">viii.</span><div><h3>Limpieza de Lente Intraocular</h3><p>Láser YAG para opacificación de cápsula posterior post-catarata.</p></div></article>
+      <article class="rv"><span class="n">ix.</span><div><h3>Ojo Seco y Párpados</h3><p>Síndrome de ojo seco, blefaritis y cirugía de párpados.</p></div></article>
     </div>
   </div>
 </section>
 
-<!-- ============ TESTIMONIALS ============ -->
-<section class="section" id="testimonios">
+<!-- DOCTOR -->
+<section class="sec doc" id="doctor">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><svg class="icon"><use href="#i-star"/></svg> Testimonios</span>
-      <h2>Lo que dicen nuestros pacientes</h2>
-      <p>Experiencias reales de quienes recuperaron su visión con nosotros.</p>
+    <header class="sec-hd rv">
+      <span class="no">03 / HOJA DE SERVICIO</span>
+      <h2>Dr. Juan Daniel de la Torre Tovar</h2>
+      <p>Trayectoria, disciplina y precisión al servicio de tu visión.</p>
+    </header>
+    <div class="doc-grid">
+      <aside class="doc-card rv">
+        <img src="assets/logo.png" alt="Emblema de la clínica">
+        <h3>de la Torre Tovar</h3>
+        <p class="rol">Oftalmólogo Especialista</p>
+        <div class="doc-tags">
+          <span>CMO Certificado</span><span>+15 años</span><span>Tecnología láser</span><span>+8,000 pacientes</span>
+        </div>
+      </aside>
+      <div class="rv">
+        <ol class="srv-rec">
+          <li class="rec">
+            <span class="k">Formación</span>
+            <b>Médico Cirujano — U.A.N.L.</b>
+            <p>Universidad Autónoma de Nuevo León, con mención honorífica.</p>
+          </li>
+          <li class="rec">
+            <span class="k">Especialidad</span>
+            <b>Oftalmología — Centro Médico Nacional</b>
+            <p>C.M.N., Instituto Mexicano del Seguro Social (IMSS).</p>
+          </li>
+          <li class="rec">
+            <span class="k">Alta especialidad</span>
+            <b>Cirugía Refractiva y Retina</b>
+            <p>Formación de alta especialidad en Estados Unidos.</p>
+          </li>
+          <li class="rec mil">
+            <span class="k">Sanidad militar</span>
+            <b>Disciplina de servicio</b>
+            <p>Con formación y trayectoria en el ámbito de la sanidad militar: rigor, precisión y vocación de servicio en cada procedimiento.</p>
+          </li>
+        </ol>
+        <p class="ced">CÉD. PROFESIONAL 1742564 · CÉD. ESPECIALIDAD 4011033</p>
+      </div>
     </div>
-    <div class="tst-grid">
-      <figure class="tst reveal">
-        <div class="stars" aria-label="5 de 5 estrellas"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
-        <blockquote>"El Dr. de la Torre Tovar me operó de LASIK hace 3 meses. Tenía -6 de miopía y ahora veo perfecto sin lentes. El procedimiento fue rápido y sin dolor. 100% recomendado."</blockquote>
-        <figcaption class="tst-person"><span class="tst-avatar">MG</span><span><b>María González</b><span>Cirugía LASIK · CDMX</span></span></figcaption>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="sec" id="testimonios">
+  <div class="wrap">
+    <header class="sec-hd rv">
+      <span class="no">04 / NOTAS DE PACIENTES</span>
+      <h2>Lo que dicen quienes ya ven claro</h2>
+    </header>
+    <div class="notes">
+      <figure class="note rv">
+        <div class="note-tab"><span>Nota 01 · LASIK</span><span class="st" aria-label="5 de 5 estrellas">★★★★★</span></div>
+        <blockquote>"Me operó de LASIK hace 3 meses. Tenía −6 de miopía y ahora veo perfecto sin lentes. El procedimiento fue rápido y sin dolor. 100% recomendado."</blockquote>
+        <figcaption><b>María González</b><span>Cirugía LASIK · CDMX</span></figcaption>
       </figure>
-      <figure class="tst reveal">
-        <div class="stars" aria-label="5 de 5 estrellas"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
-        <blockquote>"Me diagnosticaron glaucoma temprano gracias a la revisión completa. El tratamiento ha sido excelente y mi visión está estable. Muy agradecido con el doctor."</blockquote>
-        <figcaption class="tst-person"><span class="tst-avatar">RL</span><span><b>Roberto López</b><span>Tratamiento Glaucoma · Polanco</span></span></figcaption>
+      <figure class="note rv">
+        <div class="note-tab"><span>Nota 02 · Glaucoma</span><span class="st" aria-label="5 de 5 estrellas">★★★★★</span></div>
+        <blockquote>"Me diagnosticaron glaucoma temprano gracias a la revisión completa. El tratamiento ha sido excelente y mi visión está estable. Muy agradecido."</blockquote>
+        <figcaption><b>Roberto López</b><span>Tratamiento Glaucoma · Polanco</span></figcaption>
       </figure>
-      <figure class="tst reveal">
-        <div class="stars" aria-label="5 de 5 estrellas"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
-        <blockquote>"Mi mamá fue operada de cataratas con excelentes resultados. El doctor es muy atento, explica todo con paciencia. Las instalaciones son modernas y limpias."</blockquote>
-        <figcaption class="tst-person"><span class="tst-avatar">AC</span><span><b>Ana Contreras</b><span>Cirugía de Cataratas · CDMX</span></span></figcaption>
+      <figure class="note rv">
+        <div class="note-tab"><span>Nota 03 · Cataratas</span><span class="st" aria-label="5 de 5 estrellas">★★★★★</span></div>
+        <blockquote>"Mi mamá fue operada de cataratas con excelentes resultados. El doctor explica todo con paciencia. Las instalaciones son modernas y limpias."</blockquote>
+        <figcaption><b>Ana Contreras</b><span>Cirugía de Cataratas · CDMX</span></figcaption>
       </figure>
     </div>
   </div>
 </section>
 
-<!-- ============ CTA ============ -->
-<section class="section cta">
-  <div class="wrap reveal">
-    <h2>¿Listo para ver el mundo sin lentes?</h2>
-    <div class="cta-actions">
-      <a class="btn btn-wa" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg> Escríbenos por WhatsApp</a>
-      <a class="btn btn-gold" href="#contacto"><svg class="icon"><use href="#i-pin"/></svg> Ubícanos</a>
-    </div>
+<!-- AGENDAR -->
+<section class="sec book" id="agendar">
+  <div class="wrap">
+    <header class="sec-hd rv">
+      <span class="no">05 / SOLICITUD DE CITA</span>
+      <h2>Agenda en tres pasos</h2>
+      <p>Elige procedimiento, día y hora. Al confirmar, tu solicitud se envía por WhatsApp al consultorio y puedes guardar el recordatorio en tu calendario. Sin cuentas, sin esperas.</p>
+    </header>
+    <form class="wiz rv" id="wiz" novalidate>
+      <div class="wiz-top" aria-hidden="true">
+        <span id="tab1" class="on"><i>①</i> Procedimiento</span>
+        <span id="tab2"><i>②</i> Fecha y hora</span>
+        <span id="tab3"><i>③</i> Tus datos</span>
+        <span id="tab4"><i>✓</i> Confirmar</span>
+      </div>
+      <div aria-live="polite">
+
+      <!-- PASO 1 -->
+      <fieldset class="step on wiz-body" id="st1">
+        <legend><h3>1 · ¿Qué procedimiento necesitas?</h3></legend>
+        <div class="opts" id="procs"></div>
+      </fieldset>
+
+      <!-- PASO 2 -->
+      <fieldset class="step wiz-body" id="st2">
+        <legend><h3>2 · Elige día y hora</h3></legend>
+        <div class="days" id="days" role="listbox" aria-label="Días disponibles"></div>
+        <div class="slots" id="slots" aria-label="Horarios disponibles"></div>
+        <p class="hint" id="slotHint" style="margin-top:.8rem">Lun–Vie 09:00–19:00 · Sáb 09:00–14:00 · Domingos cerrado</p>
+      </fieldset>
+
+      <!-- PASO 3 -->
+      <fieldset class="step wiz-body" id="st3">
+        <legend><h3>3 · Tus datos de contacto</h3></legend>
+        <div class="fields">
+          <div class="field" id="fN">
+            <label for="inN">Nombre completo *</label>
+            <input id="inN" name="nombre" autocomplete="name" required>
+            <span class="err">Escribe tu nombre</span>
+          </div>
+          <div class="field" id="fT">
+            <label for="inT">Teléfono (10 dígitos) *</label>
+            <input id="inT" name="tel" inputmode="tel" autocomplete="tel" required>
+            <span class="err">Teléfono a 10 dígitos</span>
+          </div>
+          <div class="field full">
+            <label for="inX">Notas para el doctor (opcional)</label>
+            <textarea id="inX" name="notas" placeholder="Ej. uso lentes desde niño, diabetes, cirugía previa…"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- PASO 4 -->
+      <div class="step wiz-body" id="st4">
+        <h3>4 · Revisa y envía tu solicitud</h3>
+        <dl class="sum" id="sum"></dl>
+        <div class="send">
+          <a class="btn btn-wa" id="waSend" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#s-wa"/></svg>Enviar por WhatsApp</a>
+          <button class="btn btn-line" type="button" id="icsBtn"><svg class="ico"><use href="#s-dl"/></svg>Guardar en mi calendario</button>
+        </div>
+        <p class="ok-note">Al enviar, se abrirá WhatsApp con tu solicitud ya redactada — solo pulsa <b>enviar</b>. El consultorio confirmará tu cita por ese medio.</p>
+      </div>
+
+      </div>
+      <div class="wiz-ft">
+        <button class="btn btn-line" type="button" id="back" hidden>← Atrás</button>
+        <span class="hint" id="stepHint">Paso 1 de 4</span>
+        <button class="btn btn-green" type="button" id="next">Continuar <svg class="ico"><use href="#s-arrow"/></svg></button>
+      </div>
+    </form>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section class="section" id="contacto">
+<!-- CONTACTO -->
+<section class="sec" id="contacto">
   <div class="wrap">
-    <div>
-      <div class="section-head reveal" style="text-align:left;margin:0 0 1rem">
-        <span class="eyebrow"><svg class="icon"><use href="#i-pin"/></svg> Contacto y ubicación</span>
-        <h2 style="text-align:left">Visítanos o agenda tu cita</h2>
-      </div>
-      <div class="contact-list reveal">
-        <div class="ci">
-          <div class="ci-ico"><svg class="icon"><use href="#i-pin"/></svg></div>
-          <div><b>Consultorio</b><p>Av. Insurgentes Sur 1602, Piso 4, Consultorio 402.<br>Col. Crédito Constructor, Miguel Hidalgo, CDMX.</p></div>
-        </div>
-        <div class="ci">
-          <div class="ci-ico"><svg class="icon"><use href="#i-phone"/></svg></div>
-          <div><b>Teléfonos</b><p><a href="tel:+525555458811">(55) 5545 8811</a> &nbsp;|&nbsp; <a href="tel:+525541881244">(55) 4188 1244</a></p></div>
-        </div>
-        <div class="ci">
-          <div class="ci-ico"><svg class="icon"><use href="#i-mail"/></svg></div>
-          <div><b>Email</b><p><a href="mailto:dr.mora@oftalmologia.com">dr.mora@oftalmologia.com</a></p></div>
-        </div>
-        <div class="ci">
-          <div class="ci-ico"><svg class="icon"><use href="#i-clock"/></svg></div>
-          <div><b>Horario</b><p>Lunes a Viernes: 9:00–19:00 hrs<br>Sábado: 9:00–14:00 hrs</p></div>
-        </div>
-      </div>
-      <b style="font-family:'Montserrat',sans-serif;color:var(--ink);display:block;margin-bottom:.7rem">Síguenos en redes</b>
-      <div class="socials reveal">
-        <a href="https://wa.me/525555458811" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg> WhatsApp</a>
-        <a href="#" rel="noopener"><svg class="icon"><use href="#i-ig"/></svg> Instagram</a>
-        <a href="#" rel="noopener"><svg class="icon"><use href="#i-fb"/></svg> Facebook</a>
-        <a href="#" rel="noopener"><svg class="icon"><use href="#i-yt"/></svg> YouTube</a>
-        <a href="#" rel="noopener"><svg class="icon"><use href="#i-tt"/></svg> TikTok</a>
-      </div>
-    </div>
-    <div class="map reveal">
-      <iframe title="Mapa de ubicación del consultorio" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?q=Av.%20Insurgentes%20Sur%201602,%20CDMX&z=15&output=embed"></iframe>
+    <header class="sec-hd rv">
+      <span class="no">06 / LOCALIZACIÓN</span>
+      <h2>Contacto y consultorio</h2>
+    </header>
+    <div class="con">
+      <dl class="con-list rv">
+        <div><dt>Consultorio</dt><dd>Av. Insurgentes Sur 1602, Piso 4, Consultorio 402.<br>Col. Crédito Constructor, Miguel Hidalgo, CDMX.</dd></div>
+        <div><dt>Teléfonos</dt><dd><a href="tel:+525555458811">(55) 5545 8811</a> · <a href="tel:+525541881244">(55) 4188 1244</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:dr.mora@oftalmologia.com">dr.mora@oftalmologia.com</a></dd></div>
+        <div><dt>Horario</dt><dd>Lunes a viernes 09:00–19:00 h<br>Sábado 09:00–14:00 h</dd></div>
+        <div><dt>Redes</dt><dd class="socials" style="padding-top:.2rem">
+          <a href="https://wa.me/525555458811" target="_blank" rel="noopener"><svg class="ico"><use href="#s-wa"/></svg>WhatsApp</a>
+          <a href="#" rel="noopener">Instagram</a>
+          <a href="#" rel="noopener">Facebook</a>
+          <a href="#" rel="noopener">YouTube</a>
+          <a href="#" rel="noopener">TikTok</a>
+        </dd></div>
+      </dl>
+      <aside class="geo rv">
+        <span class="k">Coordenadas</span>
+        <b>Av. Insurgentes Sur 1602 — Consultorio 402</b>
+        <p>Zona Insurgentes / WTC. Estacionamiento en el edificio. Acceso para silla de ruedas.</p>
+        <a class="btn btn-line" style="border-color:#4A4536;color:var(--paper)" href="https://maps.google.com/?q=Av.+Insurgentes+Sur+1602,+CDMX" target="_blank" rel="noopener"><svg class="ico"><use href="#s-pin"/></svg>Abrir en Google Maps</a>
+      </aside>
     </div>
   </div>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
+<!-- FOOTER -->
+<footer class="ft">
   <div class="wrap">
-    <a class="brand" href="#inicio">
-      <img src="assets/logo.png" alt="" style="height:40px" aria-hidden="true">
-      <span class="brand-txt"><span class="brand-name">Dr. de la Torre Tovar</span><span class="brand-sub">Oftalmólogo · CDMX</span></span>
-    </a>
-    <nav class="footer-links" aria-label="Enlaces del pie de página">
-      <a href="#inicio">Inicio</a>
-      <a href="#promociones">Cirugías</a>
-      <a href="#nosotros">El Doctor</a>
+    <span class="mono" style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase">Dr. Juan Daniel de la Torre Tovar — Oftalmólogo</span>
+    <nav aria-label="Pie de página">
+      <a href="#procedimientos">Procedimientos</a>
       <a href="#servicios">Servicios</a>
+      <a href="#doctor">El Doctor</a>
+      <a href="#agendar">Agendar</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a class="btn btn-wa" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener"><svg class="icon"><use href="#i-cal"/></svg> Agendar cita</a>
-  </div>
-  <div class="wrap footer-legal">
-    © 2025 Dr. Juan Daniel de la Torre Tovar. Cédula Prof. 1742564 | Cédula Esp. 4011033. Todos los derechos reservados.
+    <p class="legal">© 2025 Dr. Juan Daniel de la Torre Tovar · Céd. Prof. 1742564 · Céd. Esp. 4011033 · Todos los derechos reservados.</p>
   </div>
 </footer>
 
-<!-- WhatsApp Float -->
-<a class="wa-float" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-  <svg class="icon"><use href="#i-wa"/></svg>
+<a class="waf" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg class="ico"><use href="#s-wa"/></svg>
 </a>
 
 <script>
-// Mobile menu
 (function(){
-  var t=document.getElementById('navToggle'),m=document.getElementById('menu');
-  if(t&&m){t.addEventListener('click',function(){
-    var open=m.classList.toggle('open');
-    t.setAttribute('aria-expanded',open);
-    t.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
+"use strict";
+var WA="525555458811";
+var PROCS=[
+ {id:"lasik",name:"Cirugía LASIK",info:"$9,700 · ambos ojos"},
+ {id:"cata",name:"Cirugía de Cataratas",info:"$12,900 · por ojo"},
+ {id:"pter",name:"Cirugía de Carnosidad (Pterigión)",info:"$8,250"},
+ {id:"cross",name:"Cross-Linking",info:"$9,500 · ambos ojos"},
+ {id:"glau",name:"Cirugía de Glaucoma",info:"desde $19,500"},
+ {id:"rev",name:"Revisión Oftalmológica",info:"consulta"},
+ {id:"otro",name:"Aún no lo sé / valoración",info:"te orientamos"}
+];
+var DOW=["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"];
+var MES=["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"];
+
+/* estado único (fuente de verdad) */
+var S={step:1,proc:null,date:null,time:null,name:"",tel:"",notes:""};
+
+var $=function(id){return document.getElementById(id)};
+
+/* ---- paso 1: procedimientos ---- */
+var ph=$("procs");
+PROCS.forEach(function(p,i){
+  var d=document.createElement("div");d.className="opt";
+  d.innerHTML='<input type="radio" name="proc" id="p'+i+'" value="'+p.name+'"><label for="p'+i+'"><b>'+p.name+'</b><small>'+p.info+'</small></label>';
+  ph.appendChild(d);
+  d.querySelector("input").addEventListener("change",function(){S.proc=p.name});
+});
+
+/* prefill desde el tarifario */
+document.querySelectorAll(".go[data-proc]").forEach(function(b){
+  b.addEventListener("click",function(){
+    var want=b.getAttribute("data-proc");
+    var inp=Array.prototype.find.call(document.querySelectorAll('#procs input'),function(i){return i.value===want});
+    if(inp){inp.checked=true;S.proc=want}
+    go(1);
+    location.hash="#agendar";
   });
-  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');t.setAttribute('aria-expanded',false);}});
+});
+
+/* ---- paso 2: días y horas ---- */
+var dh=$("days"),sh=$("slots");
+function pad(n){return (n<10?"0":"")+n}
+function buildDays(){
+  var d=new Date();d.setDate(d.getDate()+1);
+  var made=0;
+  while(made<14){
+    if(d.getDay()!==0){
+      (function(dt){
+        var b=document.createElement("button");
+        b.type="button";b.className="day";b.setAttribute("role","option");
+        b.innerHTML="<small>"+DOW[dt.getDay()]+"</small><b>"+dt.getDate()+"</b><em>"+MES[dt.getMonth()]+"</em>";
+        b.addEventListener("click",function(){
+          dh.querySelectorAll(".day").forEach(function(x){x.classList.remove("on")});
+          b.classList.add("on");
+          S.date=new Date(dt);S.time=null;
+          buildSlots(dt);
+        });
+        dh.appendChild(b);
+      })(new Date(d));
+      made++;
+    }
+    d.setDate(d.getDate()+1);
   }
-})();
-// Scroll reveal
-(function(){
-  var els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver'in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches){
-    els.forEach(function(el){el.classList.add('in')});return;
+}
+function buildSlots(dt){
+  sh.innerHTML="";
+  var endH=dt.getDay()===6?13:18;
+  var endM=30;
+  for(var h=9;h<=endH;h++){
+    for(var m=0;m<60;m+=30){
+      if(h===endH&&m>endM)break;
+      (function(t){
+        var b=document.createElement("button");
+        b.type="button";b.className="slot";b.textContent=t;
+        b.addEventListener("click",function(){
+          sh.querySelectorAll(".slot").forEach(function(x){x.classList.remove("on")});
+          b.classList.add("on");S.time=t;
+        });
+        sh.appendChild(b);
+      })(pad(h)+":"+pad(m));
+    }
   }
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
-  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
-  els.forEach(function(el){io.observe(el)});
+}
+buildDays();
+
+/* ---- validación por paso ---- */
+function validTel(v){return /^\d{10}$/.test(v.replace(/\D/g,""))}
+function check(step){
+  if(step===1){
+    if(S.proc)return true;
+    alert("Elige un procedimiento para continuar.");return false;
+  }
+  if(step===2){
+    if(S.date&&S.time)return true;
+    alert("Elige día y hora para continuar.");return false;
+  }
+  if(step===3){
+    var ok=true;
+    S.name=$("inN").value.trim();S.tel=$("inT").value.trim();S.notes=$("inX").value.trim();
+    $("fN").classList.toggle("bad",!S.name);if(!S.name)ok=false;
+    $("fT").classList.toggle("bad",!validTel(S.tel));if(!validTel(S.tel))ok=false;
+    return ok;
+  }
+  return true;
+}
+$("inN").addEventListener("blur",function(){$("fN").classList.toggle("bad",!this.value.trim())});
+$("inT").addEventListener("blur",function(){$("fT").classList.toggle("bad",!validTel(this.value))});
+
+/* ---- navegación ---- */
+function dateLabel(){
+  if(!S.date)return"";
+  return DOW[S.date.getDay()]+" "+S.date.getDate()+" "+MES[S.date.getMonth()]+" "+S.date.getFullYear();
+}
+function render(){
+  for(var i=1;i<=4;i++){
+    $("st"+i).classList.toggle("on",S.step===i);
+    var t=$("tab"+i);
+    t.classList.toggle("on",S.step===i);
+    t.classList.toggle("done",S.step>i);
+  }
+  $("back").hidden=S.step===1;
+  $("next").style.display=S.step===4?"none":"inline-flex";
+  $("stepHint").textContent="Paso "+S.step+" de 4";
+  if(S.step===4)fillSummary();
+}
+function go(n){S.step=n;render();}
+$("next").addEventListener("click",function(){
+  if(check(S.step))go(S.step+1);
+});
+$("back").addEventListener("click",function(){go(S.step-1)});
+
+/* ---- resumen + envío ---- */
+function fillSummary(){
+  var s=$("sum");
+  s.innerHTML='<span class="seal">Solicitud lista</span>'
+   +'<div><dt>Procedimiento</dt><dd>'+S.proc+'</dd></div>'
+   +'<div><dt>Fecha</dt><dd>'+dateLabel()+'</dd></div>'
+   +'<div><dt>Hora</dt><dd>'+S.time+' h</dd></div>'
+   +'<div><dt>Paciente</dt><dd>'+S.name+'</dd></div>'
+   +'<div><dt>Teléfono</dt><dd>'+S.tel+'</dd></div>'
+   +(S.notes?'<div><dt>Notas</dt><dd>'+S.notes+'</dd></div>':'');
+  var msg="SOLICITUD DE CITA\n"
+   +"· Procedimiento: "+S.proc+"\n"
+   +"· Fecha: "+dateLabel()+"\n"
+   +"· Hora: "+S.time+" h\n"
+   +"· Paciente: "+S.name+"\n"
+   +"· Teléfono: "+S.tel
+   +(S.notes?"\n· Notas: "+S.notes:"");
+  $("waSend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
+}
+$("icsBtn").addEventListener("click",function(){
+  if(!S.date||!S.time)return;
+  var hm=S.time.split(":");
+  var st=new Date(S.date);st.setHours(+hm[0],+hm[1],0,0);
+  var en=new Date(st.getTime()+30*60000);
+  function f(d){return d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+"T"+pad(d.getHours())+pad(d.getMinutes())+"00"}
+  var ics="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//DrTovar//Cita//ES\r\nBEGIN:VEVENT\r\n"
+   +"UID:"+Date.now()+"@drtovar\r\nDTSTAMP:"+f(new Date())+"\r\nDTSTART:"+f(st)+"\r\nDTEND:"+f(en)+"\r\n"
+   +"SUMMARY:Cita oftalmológica — Dr. de la Torre Tovar\r\n"
+   +"DESCRIPTION:"+S.proc.replace(/,/g,"\\,")+"\r\n"
+   +"LOCATION:Av. Insurgentes Sur 1602\\, Piso 4\\, Consultorio 402\\, CDMX\r\n"
+   +"END:VEVENT\r\nEND:VCALENDAR";
+  var a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));
+  a.download="cita-oftalmologia.ics";
+  document.body.appendChild(a);a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},400);
+});
+
+render();
+
+/* ---- reveal sutil ---- */
+var els=document.querySelectorAll(".rv");
+if(!("IntersectionObserver"in window)||matchMedia("(prefers-reduced-motion:reduce)").matches){
+  els.forEach(function(e){e.classList.add("in")});
+}else{
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}});
+  },{threshold:.1,rootMargin:"0px 0px -30px 0px"});
+  els.forEach(function(e){io.observe(e)});
+}
 })();
 </script>
 </body>
