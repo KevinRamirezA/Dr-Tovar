@@ -4,494 +4,666 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Juan Daniel de la Torre Tovar — Oftalmólogo · Clínica de Ojos CDMX</title>
-<meta name="description" content="Expediente abierto: cirugía LASIK, cataratas, glaucoma y retina en CDMX. Dr. Juan Daniel de la Torre Tovar, oftalmólogo con más de 15 años de experiencia. Agenda tu cita en línea.">
-<meta name="theme-color" content="#12100B">
+<meta name="description" content="Clínica oftalmológica premium en CDMX. Cirugía LASIK, cataratas, glaucoma, retina y más con el Dr. Juan Daniel de la Torre Tovar. +15 años de experiencia. Agenda tu valoración en línea.">
+<meta name="theme-color" content="#1E5F9E">
 <meta property="og:title" content="Dr. Juan Daniel de la Torre Tovar — Oftalmólogo · CDMX">
 <meta property="og:description" content="Cirugías oculares con tecnología láser. Agenda tu valoración en línea.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Physician","name":"Dr. Juan Daniel de la Torre Tovar","medicalSpecialty":"Ophthalmology","address":{"@type":"PostalAddress","streetAddress":"Av. Insurgentes Sur 1602, Piso 4, Consultorio 402","addressLocality":"Ciudad de México","addressCountry":"MX"},"telephone":"+52 55 5545 8811"}
 </script>
 <style>
-/* ================= TOKENS ================= */
+/* ============================================================
+   TOKENS
+============================================================ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --paper:#F5F1E8; --paper-2:#EDE8DB; --card:#FBF9F3;
-  --ink:#12100B; --ink-2:#43403A; --ink-3:#6E6A60;
-  --line:#12100B; --hair:#CFC8B8;
-  --green:#123F33; --green-2:#0C2E25; --green-soft:#DDE7DF;
-  --copper:#9A4A22; --copper-soft:#F3E3D8;
-  --gold:#8A6D28;
-  --wa:#1FAE54;
-  --err:#A3341F;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --serif:'Fraunces',Georgia,serif;
-  --sans:'Archivo',system-ui,sans-serif;
-  --r:2px;
-  --gutter:clamp(1rem,4vw,3rem);
+  --bg:#F5F9FC; --bg-2:#EAF2F8; --card:#FFFFFF;
+  --primary:#1E5F9E; --primary-d:#164B7E; --primary-dd:#0F3A63;
+  --accent:#12B39C; --accent-d:#0C8E7C; --accent-l:#16C0A8;
+  --ink:#0E2233; --text:#41586C; --muted:#7389A0; --faint:#9FB2C4;
+  --line:#DEE9F2; --line-2:#EDF3F8;
+  --wa:#25D366; --wa-d:#1DA851;
+  --err:#DC3B2F; --ok:#12B39C;
+  --ring:rgba(30,95,158,.35);
+  --sh-1:0 1px 2px rgba(14,34,51,.05),0 1px 3px rgba(14,34,51,.06);
+  --sh-2:0 6px 18px rgba(20,75,126,.10),0 2px 6px rgba(20,75,126,.06);
+  --sh-3:0 20px 45px rgba(20,75,126,.16),0 8px 18px rgba(20,75,126,.08);
+  --sh-blue:0 12px 30px rgba(30,95,158,.30);
+  --sh-aqua:0 12px 30px rgba(18,179,156,.30);
+  --grad:linear-gradient(135deg,var(--primary),var(--accent));
+  --grad-soft:linear-gradient(135deg,#2E74B8,#18C2A9);
+  --r:16px; --r-sm:11px; --r-lg:26px; --r-pill:999px;
+  --serif:'Plus Jakarta Sans',system-ui,sans-serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --max:1200px; --gut:clamp(1.1rem,4vw,2.6rem);
 }
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1rem;line-height:1.6;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:linear-gradient(90deg,transparent calc(100% - 1px),rgba(18,16,11,.045) 0) 0 0/8.333% 100%}
-h1,h2,h3{font-family:var(--serif);line-height:1.02;font-weight:700;letter-spacing:-.01em}
-a{color:inherit}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+body{font-family:var(--sans);color:var(--text);background:var(--bg);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);line-height:1.12;font-weight:800;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-ul,ol{list-style:none}
+ul{list-style:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-input,select,textarea{font:inherit;color:inherit}
-:focus-visible{outline:3px solid var(--copper);outline-offset:2px}
-.mono{font-family:var(--mono)}
-.wrap{max-width:1240px;margin-inline:auto;padding-inline:var(--gutter);position:relative;z-index:1}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.skip{position:absolute;left:-999px;top:0;z-index:99;background:var(--ink);color:var(--paper);padding:.7rem 1rem;font-family:var(--mono)}
+input,textarea,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--ring);outline-offset:2px;border-radius:6px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut);position:relative}
+.sr{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:fixed;left:-999px;top:0;z-index:999;background:var(--primary);color:#fff;padding:.8rem 1.2rem;border-radius:0 0 10px 0;font-weight:600}
 .skip:focus{left:0}
-.ico{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ico{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
-/* ================= FILE BAR ================= */
-.filebar{border-bottom:1px solid var(--line);background:var(--paper);font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase}
-.filebar .wrap{display:flex;flex-wrap:wrap;gap:.35rem 2rem;justify-content:space-between;padding-block:.5rem}
-.filebar span b{color:var(--copper);font-weight:600}
-.filebar a{text-decoration:none}
-.filebar a:hover{color:var(--copper)}
+/* ============================================================
+   SCROLL PROGRESS
+============================================================ */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:200;background:var(--grad);transition:width .1s linear;box-shadow:0 0 10px rgba(18,179,156,.5)}
 
-/* ================= HEADER ================= */
-.hd{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
-.hd .wrap{display:flex;align-items:stretch;gap:0;padding-inline:var(--gutter)}
-.brand{display:flex;align-items:center;gap:.7rem;padding-block:.75rem;text-decoration:none;margin-right:auto}
-.brand img{height:42px;width:auto}
-.brand b{font-family:var(--serif);font-size:1.05rem;font-weight:700;line-height:1.05;display:block}
-.brand small{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
-.nav{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none}
-.nav::-webkit-scrollbar{display:none}
-.nav a{display:flex;align-items:center;gap:.5rem;padding:0 1.05rem;border-left:1px solid var(--hair);text-decoration:none;font-size:.8rem;font-weight:600;white-space:nowrap;transition:background .18s,color .18s}
-.nav a i{font-style:normal;font-family:var(--mono);font-size:.62rem;color:var(--copper)}
-.nav a:hover{background:var(--ink);color:var(--paper)}
-.nav a:hover i{color:var(--paper)}
-.nav a.cta{background:var(--green);color:var(--paper);border-left:1px solid var(--line)}
-.nav a.cta:hover{background:var(--green-2)}
-.nav a.cta i{color:#CBB77A}
+/* ============================================================
+   HEADER / NAV
+============================================================ */
+.hd{position:fixed;top:0;left:0;right:0;z-index:150;transition:background .4s var(--ease),box-shadow .4s var(--ease),padding .3s var(--ease)}
+.hd::before{content:"";position:absolute;inset:0;background:rgba(245,249,252,.72);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);opacity:0;transition:opacity .4s var(--ease)}
+.hd.stuck::before{opacity:1}
+.hd.stuck{box-shadow:0 1px 0 var(--line),var(--sh-1)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem;transition:padding .3s var(--ease)}
+.hd.stuck .wrap{padding-block:.55rem}
+.brand{display:flex;align-items:center;gap:.65rem;z-index:2}
+.brand img{height:44px;width:auto;transition:height .3s var(--ease)}
+.hd.stuck .brand img{height:38px}
+.brand b{font-family:var(--serif);font-weight:800;font-size:1.02rem;color:var(--ink);line-height:1.1;display:block}
+.brand small{font-family:var(--sans);font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.menu{display:flex;align-items:center;gap:.15rem}
+.menu>a{padding:.6rem .85rem;font-weight:500;font-size:.9rem;color:var(--ink);border-radius:var(--r-pill);position:relative;transition:color .25s}
+.menu>a::after{content:"";position:absolute;left:50%;bottom:.35rem;width:0;height:2px;background:var(--grad);border-radius:2px;transform:translateX(-50%);transition:width .3s var(--ease)}
+.menu>a:hover{color:var(--primary)}
+.menu>a:hover::after{width:22px}
+.hd-cta{display:flex;align-items:center;gap:.6rem}
+.btn{--bg:var(--primary);display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--sans);font-weight:600;font-size:.92rem;padding:.8rem 1.4rem;border-radius:var(--r-pill);min-height:48px;position:relative;overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s;cursor:pointer;white-space:nowrap}
+.btn .ico{width:19px;height:19px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:var(--sh-blue)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(30,95,158,.42)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 26px rgba(37,211,102,.32)}
+.btn-wa:hover{background:var(--wa-d);transform:translateY(-2px)}
+.btn-ghost{background:var(--card);color:var(--primary-d);box-shadow:var(--sh-1);border:1px solid var(--line)}
+.btn-ghost:hover{transform:translateY(-2px);box-shadow:var(--sh-2);border-color:transparent}
+.btn-light{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(6px)}
+.btn-light:hover{background:rgba(255,255,255,.26)}
+.burger{display:none;width:48px;height:48px;border-radius:12px;align-items:center;justify-content:center;color:var(--ink);background:var(--card);box-shadow:var(--sh-1);border:1px solid var(--line)}
+.burger .ico{width:24px;height:24px}
 
-/* ================= HERO / SNELLEN ================= */
-.hero{border-bottom:1px solid var(--line);position:relative}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);min-height:min(78vh,760px)}
-.hero-l{padding-block:clamp(2.2rem,6vw,4.5rem);padding-right:clamp(1.2rem,4vw,3.2rem);display:flex;flex-direction:column;justify-content:center;gap:1.4rem}
-.tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:.6rem}
-.tag::before{content:"";width:34px;height:1px;background:var(--copper)}
-.hero-l p.lead{font-size:1.02rem;color:var(--ink-2);max-width:38ch}
-.meta{border:1px solid var(--line);background:var(--card)}
-.meta div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem .8rem;font-family:var(--mono);font-size:.72rem;border-bottom:1px dashed var(--hair)}
-.meta div:last-child{border-bottom:0}
-.meta dt{color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
-.meta dd{font-weight:600}
-.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:50px;padding:.8rem 1.5rem;font-weight:600;font-size:.92rem;text-decoration:none;border:1px solid var(--line);border-radius:var(--r);transition:transform .18s,background .18s,color .18s,box-shadow .18s;cursor:pointer}
-.btn:active{transform:translateY(1px)}
-.btn-ink{background:var(--ink);color:var(--paper);box-shadow:4px 4px 0 var(--copper)}
-.btn-ink:hover{background:var(--green-2);box-shadow:2px 2px 0 var(--copper)}
-.btn-line{background:transparent}
-.btn-line:hover{background:var(--paper-2)}
-.btn-wa{background:var(--wa);color:#fff;border-color:var(--wa)}
-.btn-wa:hover{filter:brightness(.92)}
-.btn-green{background:var(--green);color:var(--paper);box-shadow:4px 4px 0 var(--gold)}
-.btn-green:hover{background:var(--green-2);box-shadow:2px 2px 0 var(--gold)}
-.hero-r{border-left:1px solid var(--line);background:var(--card);position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,5vw,4rem) clamp(1.2rem,4vw,3.5rem);overflow:hidden}
-.snellen{display:grid;gap:clamp(.7rem,2.2vw,1.4rem);text-align:center}
-.sn-row{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:1rem;border-bottom:1px dashed var(--hair);padding-bottom:clamp(.5rem,1.5vw,1rem)}
-.sn-row span{font-family:var(--serif);font-weight:900;letter-spacing:.06em;text-transform:uppercase;display:block}
-.sn-row i{font-style:normal;font-family:var(--mono);font-size:.62rem;color:var(--ink-3);white-space:nowrap}
-.sn-1 span{font-size:clamp(3.4rem,9vw,7.5rem);color:var(--ink)}
-.sn-2 span{font-size:clamp(2rem,5.4vw,4.3rem);color:var(--green)}
-.sn-3 span{font-size:clamp(1.2rem,3.2vw,2.4rem);color:var(--ink-2)}
-.sn-4 span{font-size:clamp(.8rem,1.8vw,1.15rem);letter-spacing:.28em;color:var(--copper)}
-.reticle{position:absolute;inset:0;pointer-events:none;opacity:.55}
-.reticle::before,.reticle::after{content:"";position:absolute;background:var(--hair)}
-.reticle::before{left:50%;top:0;bottom:0;width:1px}
-.reticle::after{top:50%;left:0;right:0;height:1px}
+/* mobile drawer */
+.drawer{position:fixed;inset:0;z-index:180;background:rgba(14,34,51,.5);backdrop-filter:blur(4px);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.drawer.open{opacity:1;visibility:visible}
+.drawer-panel{position:absolute;top:0;right:0;bottom:0;width:min(86%,340px);background:var(--bg);box-shadow:-20px 0 50px rgba(14,34,51,.2);transform:translateX(100%);transition:transform .4s var(--ease);display:flex;flex-direction:column;padding:1.3rem}
+.drawer.open .drawer-panel{transform:none}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.4rem}
+.drawer-close{width:44px;height:44px;border-radius:11px;background:var(--card);box-shadow:var(--sh-1);display:flex;align-items:center;justify-content:center}
+.drawer a.dl{padding:1rem .6rem;font-family:var(--serif);font-weight:600;font-size:1.15rem;color:var(--ink);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.drawer a.dl .ico{color:var(--accent);width:20px;height:20px}
+.drawer .btn{margin-top:1.4rem}
 
-/* ================= STRIP ================= */
-.strip{border-bottom:1px solid var(--line);background:var(--ink);color:var(--paper);overflow:hidden}
-.strip .in{display:flex;gap:3rem;white-space:nowrap;padding:.55rem 0;font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;width:max-content}
-.strip em{font-style:normal;color:#CBB77A}
-@media(prefers-reduced-motion:no-preference){.strip .in{animation:mq 30s linear infinite}}
-@keyframes mq{to{transform:translateX(-50%)}}
+/* ============================================================
+   HERO
+============================================================ */
+.hero{position:relative;padding-top:clamp(6.5rem,14vw,9rem);padding-bottom:clamp(3rem,7vw,5rem);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:
+   radial-gradient(60% 55% at 82% 12%,rgba(18,179,156,.20),transparent 60%),
+   radial-gradient(55% 55% at 8% 20%,rgba(30,95,158,.16),transparent 55%),
+   linear-gradient(180deg,#EAF3FA 0%,var(--bg) 70%)}
+.blob{position:absolute;border-radius:50%;filter:blur(40px);opacity:.5;z-index:-1}
+.blob-1{width:min(48vw,520px);aspect-ratio:1;background:radial-gradient(circle,rgba(18,179,156,.5),transparent 70%);top:-14%;right:-8%}
+.blob-2{width:min(40vw,420px);aspect-ratio:1;background:radial-gradient(circle,rgba(30,95,158,.4),transparent 70%);bottom:-20%;left:-10%}
+@media(prefers-reduced-motion:no-preference){.blob-1{animation:drift 18s ease-in-out infinite}.blob-2{animation:drift 22s ease-in-out infinite reverse}}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-24px,24px) scale(1.08)}}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.7);backdrop-filter:blur(8px);border:1px solid var(--line);padding:.5rem .95rem;border-radius:var(--r-pill);font-size:.8rem;font-weight:600;color:var(--primary-d);box-shadow:var(--sh-1)}
+.hero-badge .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(18,179,156,.2)}
+@media(prefers-reduced-motion:no-preference){.hero-badge .dot{animation:pulse 2s infinite}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(18,179,156,.35)}50%{box-shadow:0 0 0 6px rgba(18,179,156,0)}}
+.hero h1{font-size:clamp(2.3rem,5.6vw,4rem);margin:1.1rem 0 1.1rem;font-weight:800}
+.hero h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-lead{font-size:clamp(1.02rem,2.2vw,1.2rem);color:var(--text);max-width:44ch;margin-bottom:1.7rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.7rem}
+.hero-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chip{display:inline-flex;align-items:center;gap:.45rem;background:var(--card);border:1px solid var(--line);padding:.45rem .8rem;border-radius:var(--r-pill);font-size:.78rem;font-weight:600;color:var(--ink);box-shadow:var(--sh-1)}
+.chip .ico{width:15px;height:15px;stroke:var(--accent-d)}
+/* hero visual */
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:min(60vw,440px)}
+.eye-stage{position:relative;width:min(78%,360px);aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.eye-ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,var(--primary),var(--accent),var(--primary));padding:2px;-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 0);mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 0);opacity:.55}
+@media(prefers-reduced-motion:no-preference){.eye-ring{animation:spin 14s linear infinite}.eye-ring.r2{animation-duration:20s;animation-direction:reverse;inset:10%;opacity:.35}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.eye-disc{position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle at 38% 32%,#fff,#EAF3FA 60%,#DCEBF5);box-shadow:var(--sh-3),inset 0 2px 10px rgba(255,255,255,.9)}
+.eye-emblem{position:relative;width:60%;filter:drop-shadow(0 14px 26px rgba(20,75,126,.28))}
+@media(prefers-reduced-motion:no-preference){.eye-emblem{animation:float 6s ease-in-out infinite}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.floaty{position:absolute;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.9);border-radius:14px;box-shadow:var(--sh-2);padding:.6rem .8rem;display:flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:600;color:var(--ink)}
+.floaty .i{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--grad);color:#fff;flex:none}
+.floaty .i .ico{width:18px;height:18px;stroke-width:2}
+.floaty b{display:block;font-family:var(--serif);font-size:1rem;line-height:1}
+.floaty span{color:var(--muted);font-weight:500;font-size:.68rem}
+.f1{top:6%;left:-4%}
+.f2{bottom:10%;right:-6%}
+.f3{bottom:32%;left:-8%}
+@media(prefers-reduced-motion:no-preference){.f1{animation:float 5s ease-in-out infinite}.f2{animation:float 7s ease-in-out infinite}.f3{animation:float 6.4s ease-in-out .6s infinite}}
 
-/* ================= SECTION SHELL ================= */
-.sec{border-bottom:1px solid var(--line)}
-.sec-hd{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1.6rem;padding-block:clamp(1.8rem,4vw,2.6rem)}
-.sec-hd .no{font-family:var(--mono);font-size:.72rem;color:var(--copper);letter-spacing:.1em}
-.sec-hd h2{font-size:clamp(1.7rem,4.4vw,2.9rem);font-weight:900}
-.sec-hd p{flex-basis:100%;color:var(--ink-2);max-width:60ch}
+/* ============================================================
+   TRUST STATS
+============================================================ */
+.stats{position:relative;z-index:1;margin-top:clamp(1.5rem,4vw,2.5rem)}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(1.2rem,3vw,2rem);box-shadow:var(--sh-2)}
+.stat{text-align:center;position:relative}
+.stat+.stat::before{content:"";position:absolute;left:0;top:15%;height:70%;width:1px;background:var(--line)}
+.stat .n{font-family:var(--serif);font-weight:800;font-size:clamp(1.7rem,4.5vw,2.6rem);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.stat .l{font-size:.82rem;color:var(--muted);margin-top:.3rem;font-weight:500}
 
-/* ================= LEDGER (PRECIOS) ================= */
-.ledger{border-top:1px solid var(--line)}
-.row{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:clamp(.8rem,2.5vw,2rem);padding:1.05rem 0;border-bottom:1px dashed var(--hair);transition:background .18s;position:relative}
-.row:hover{background:var(--card)}
-.row .n{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);width:2.2rem}
-.row .what b{font-family:var(--serif);font-size:clamp(1.05rem,2.4vw,1.45rem);font-weight:700;display:block}
-.row .what small{color:var(--ink-2);font-size:.85rem}
-.row .price{font-family:var(--mono);font-weight:600;font-size:clamp(.95rem,2.2vw,1.2rem);white-space:nowrap;text-align:right}
-.row .price small{display:block;font-weight:400;font-size:.62rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
-.row .go{min-height:44px;display:inline-flex;align-items:center;gap:.45rem;padding:.55rem 1rem;border:1px solid var(--line);border-radius:var(--r);font-size:.8rem;font-weight:600;text-decoration:none;background:var(--paper);transition:background .18s,color .18s;cursor:pointer}
-.row .go:hover{background:var(--ink);color:var(--paper)}
-.row.hot{background:var(--green-soft)}
-.row.hot:hover{background:#d2e0d6}
-.stamp{position:absolute;top:-1px;left:2.2rem;transform:translateY(-50%) rotate(-2deg);font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);border:1.5px solid var(--copper);padding:.18rem .5rem;background:var(--paper);border-radius:var(--r)}
-.ledger-note{font-family:var(--mono);font-size:.66rem;color:var(--ink-3);padding:.9rem 0 2.2rem;text-transform:uppercase;letter-spacing:.08em}
+/* ============================================================
+   SECTION SHELL
+============================================================ */
+.sec{padding-block:clamp(3.5rem,8vw,6rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-d)}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+.sec-head{max-width:640px;margin-bottom:clamp(2rem,4vw,3rem)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head.center .eyebrow::before{display:none}
+.sec-head h2{font-size:clamp(1.8rem,4.4vw,2.9rem);margin:.7rem 0 .6rem}
+.sec-head p{color:var(--muted);font-size:1.05rem}
 
-/* ================= SERVICIOS INDEX ================= */
-.svc{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-bottom:clamp(2rem,5vw,3rem)}
-.svc article{border-bottom:1px dashed var(--hair);padding:1.15rem 1rem 1.15rem 0;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
-.svc article:nth-child(odd){border-right:1px solid var(--hair);padding-right:clamp(1rem,3vw,2.4rem)}
-.svc article:nth-child(even){padding-left:clamp(1rem,3vw,2.4rem)}
-.svc .n{font-family:var(--mono);font-size:.7rem;color:var(--copper);padding-top:.35rem}
-.svc h3{font-size:1.12rem;margin-bottom:.25rem}
-.svc p{font-size:.88rem;color:var(--ink-2)}
+/* ============================================================
+   PROCEDURES / PRICING
+============================================================ */
+.toggle{display:inline-flex;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:.3rem;gap:.2rem;margin-bottom:2rem}
+.toggle button{padding:.55rem 1.15rem;border-radius:var(--r-pill);font-weight:600;font-size:.88rem;color:var(--muted);transition:color .25s;position:relative}
+.toggle button.on{color:#fff}
+.toggle .pill{position:absolute;inset:.3rem auto .3rem .3rem;background:var(--grad);border-radius:var(--r-pill);box-shadow:var(--sh-blue);transition:transform .4s var(--ease),width .4s var(--ease);z-index:0}
+.toggle button span{position:relative;z-index:1}
+.proc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:1.3rem}
+.proc{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem;box-shadow:var(--sh-1);transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s;overflow:hidden;display:flex;flex-direction:column}
+.proc::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.proc:hover{transform:translateY(-8px);box-shadow:var(--sh-3);border-color:transparent}
+.proc:hover::before{transform:scaleX(1)}
+.proc.feat{border-color:transparent;box-shadow:var(--sh-2);background:linear-gradient(180deg,#fff,#F3FBF9)}
+.proc.feat::before{transform:scaleX(1)}
+.proc-tag{position:absolute;top:1.1rem;right:1.1rem;font-size:.64rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-d);background:rgba(18,179,156,.12);padding:.28rem .6rem;border-radius:var(--r-pill)}
+.proc-ico{width:56px;height:56px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(30,95,158,.12),rgba(18,179,156,.14));color:var(--primary);margin-bottom:1rem;transition:transform .35s var(--ease)}
+.proc:hover .proc-ico{transform:scale(1.08) rotate(-4deg)}
+.proc-ico .ico{width:28px;height:28px}
+.proc h3{font-size:1.18rem;margin-bottom:.3rem}
+.proc .desc{font-size:.9rem;color:var(--muted);flex:1;margin-bottom:1rem}
+.proc .price{display:flex;align-items:baseline;gap:.4rem;margin-bottom:1.1rem}
+.proc .price b{font-family:var(--serif);font-weight:800;font-size:1.75rem;color:var(--ink)}
+.proc .price span{font-size:.78rem;color:var(--muted);font-weight:500}
+.proc .book-btn{width:100%;background:var(--bg-2);color:var(--primary-d);font-weight:600;min-height:46px;border-radius:var(--r-sm);display:inline-flex;align-items:center;justify-content:center;gap:.5rem;transition:background .25s,color .25s}
+.proc:hover .book-btn,.proc .book-btn:hover{background:var(--grad);color:#fff}
+.proc .book-btn .ico{width:18px;height:18px;transition:transform .25s}
+.proc .book-btn:hover .ico{transform:translateX(3px)}
 
-/* ================= DOCTOR (DOSSIER OSCURO) ================= */
-.doc{background:var(--ink);color:var(--paper);border-bottom:1px solid var(--line)}
-.doc .sec-hd h2{color:var(--paper)}
-.doc .sec-hd p{color:#B9B4A6}
-.doc-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(1.6rem,4vw,3.5rem);padding-bottom:clamp(2.4rem,6vw,4rem)}
-.doc-card{border:1px solid #3A362C;background:#1A1811;padding:1.6rem;text-align:center;height:max-content}
-.doc-card img{width:130px;margin:0 auto 1rem;filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))}
-.doc-card h3{color:var(--paper);font-size:1.25rem}
-.doc-card .rol{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:#CBB77A;margin-top:.3rem}
-.doc-tags{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:1.2rem}
-.doc-tags span{border:1px dashed #4A4536;font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;padding:.5rem .3rem;color:#D8D2C0}
-.srv-rec{display:grid;gap:0;border-left:1px solid #4A4536}
-.rec{position:relative;padding:0 0 1.6rem 1.6rem}
-.rec:last-child{padding-bottom:0}
-.rec::before{content:"";position:absolute;left:-5px;top:.45rem;width:9px;height:9px;background:var(--paper);border:2px solid var(--copper);border-radius:50%}
-.rec .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:#CBB77A}
-.rec b{font-family:var(--serif);font-size:1.15rem;display:block;margin:.15rem 0 .1rem;color:var(--paper)}
-.rec p{font-size:.9rem;color:#B9B4A6;max-width:56ch}
-.rec.mil{background:linear-gradient(90deg,rgba(203,183,122,.08),transparent);border-radius:var(--r)}
-.ced{font-family:var(--mono);font-size:.7rem;color:#B9B4A6;border-top:1px dashed #4A4536;margin-top:1.6rem;padding-top:1rem;letter-spacing:.05em}
+/* ============================================================
+   SERVICES
+============================================================ */
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.1rem}
+.serv{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;box-shadow:var(--sh-1);transition:transform .35s var(--ease),box-shadow .35s var(--ease);position:relative;overflow:hidden}
+.serv:hover{transform:translateY(-6px);box-shadow:var(--sh-2)}
+.serv-ico{width:50px;height:50px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(30,95,158,.1),rgba(18,179,156,.12));color:var(--accent-d);margin-bottom:.9rem}
+.serv-ico .ico{width:26px;height:26px}
+.serv h3{font-size:1.05rem;margin-bottom:.3rem}
+.serv p{font-size:.88rem;color:var(--muted)}
 
-/* ================= TESTIMONIOS ================= */
-.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.5vw,1.6rem);padding-bottom:clamp(2.4rem,6vw,3.5rem)}
-.note{border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column}
-.note-tab{border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:.5rem .9rem;font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
-.note-tab .st{color:var(--gold);letter-spacing:.2em}
-.note blockquote{padding:1.1rem .9rem;font-size:.92rem;color:var(--ink-2);flex:1}
-.note figcaption{border-top:1px dashed var(--hair);padding:.7rem .9rem;font-family:var(--mono);font-size:.7rem}
-.note figcaption b{display:block;font-weight:600}
-.note figcaption span{color:var(--ink-3)}
+/* ============================================================
+   DOCTOR
+============================================================ */
+.doctor{background:linear-gradient(160deg,#0E3357,#164B7E 55%,#0F3A63);color:#fff;position:relative;overflow:hidden}
+.doctor::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(18,179,156,.28),transparent 65%);top:-200px;right:-160px}
+.doctor .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center;position:relative;z-index:1}
+.doctor .eyebrow{color:#7FE3D2}
+.doctor .eyebrow::before{background:#7FE3D2}
+.doctor h2{color:#fff;font-size:clamp(1.8rem,4.4vw,2.7rem);margin:.7rem 0 1rem}
+.doctor .intro{color:rgba(255,255,255,.85);margin-bottom:1.6rem;max-width:52ch}
+.dcard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);border-radius:var(--r-lg);padding:2rem;text-align:center;box-shadow:var(--sh-3)}
+.dcard-emblem{width:130px;height:130px;margin:0 auto 1rem;border-radius:50%;background:radial-gradient(circle at 40% 35%,#fff,#DCEBF5);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 2px 8px rgba(255,255,255,.7),var(--sh-2)}
+.dcard-emblem img{width:74%}
+.dcard h3{color:#fff;font-size:1.3rem}
+.dcard .role{color:#7FE3D2;font-weight:600;font-size:.92rem;margin-top:.2rem}
+.dcard-tags{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-top:1.3rem}
+.dcard-tags span{display:flex;align-items:center;gap:.45rem;justify-content:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:.55rem .4rem;font-size:.75rem;font-weight:600}
+.dcard-tags .ico{width:15px;height:15px;stroke:#7FE3D2}
+.timeline{position:relative;padding-left:1.7rem}
+.timeline::before{content:"";position:absolute;left:5px;top:.5rem;bottom:.5rem;width:2px;background:linear-gradient(180deg,#7FE3D2,rgba(127,227,210,.15))}
+.tl{position:relative;padding-bottom:1.4rem}
+.tl:last-child{padding-bottom:0}
+.tl::before{content:"";position:absolute;left:-1.7rem;top:.35rem;width:12px;height:12px;border-radius:50%;background:#0E3357;border:2px solid #7FE3D2;box-shadow:0 0 0 4px rgba(127,227,210,.15)}
+.tl .k{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#7FE3D2;font-weight:700}
+.tl b{display:block;color:#fff;font-family:var(--serif);font-size:1.1rem;margin:.15rem 0 .2rem}
+.tl p{font-size:.9rem;color:rgba(255,255,255,.75)}
+.tl.mil{background:linear-gradient(90deg,rgba(127,227,210,.1),transparent);border-radius:12px;padding:.7rem .9rem .7rem 0}
+.tl.mil::before{background:#7FE3D2}
+.ced{margin-top:1.4rem;font-size:.8rem;color:rgba(255,255,255,.7);border-top:1px solid rgba(255,255,255,.14);padding-top:1rem;font-weight:500}
 
-/* ================= AGENDAR (WIZARD) ================= */
-.book{background:var(--green);color:var(--paper);border-bottom:1px solid var(--line)}
-.book .sec-hd h2{color:var(--paper)}
-.book .sec-hd p{color:#C6D4C9}
-.book .sec-hd .no{color:#CBB77A}
-.wiz{background:var(--paper);color:var(--ink);border:1px solid var(--line);box-shadow:8px 8px 0 rgba(0,0,0,.25);margin-bottom:clamp(2.4rem,6vw,4rem);border-radius:var(--r)}
-.wiz-top{display:flex;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase}
-.wiz-top span{flex:1;padding:.7rem .5rem;text-align:center;color:var(--ink-3);border-right:1px solid var(--hair);display:flex;align-items:center;justify-content:center;gap:.45rem}
-.wiz-top span:last-child{border-right:0}
-.wiz-top span.on{background:var(--ink);color:var(--paper)}
-.wiz-top span.done{color:var(--green)}
-.wiz-body{padding:clamp(1.2rem,3.5vw,2.2rem)}
-.wiz h3{font-size:1.3rem;margin-bottom:1.1rem}
-.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.7rem}
-.opt{position:relative}
-.opt input{position:absolute;opacity:0;inset:0}
-.opt label{display:flex;flex-direction:column;gap:.2rem;border:1px solid var(--line);border-radius:var(--r);padding:.8rem .9rem;min-height:64px;cursor:pointer;background:var(--card);transition:background .18s,box-shadow .18s;font-size:.9rem}
-.opt label b{font-weight:600}
-.opt label small{font-family:var(--mono);font-size:.68rem;color:var(--ink-3)}
-.opt input:checked+label{background:var(--green);color:var(--paper);box-shadow:3px 3px 0 var(--gold)}
-.opt input:checked+label small{color:#CBD8CE}
-.opt input:focus-visible+label{outline:3px solid var(--copper);outline-offset:2px}
-.days{display:flex;gap:.55rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin}
-.day{min-width:86px;min-height:74px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);font-family:var(--mono);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;cursor:pointer;transition:background .18s,box-shadow .18s}
-.day small{font-size:.6rem;letter-spacing:.12em;color:var(--ink-3)}
-.day b{font-size:1.15rem;font-weight:600}
-.day em{font-style:normal;font-size:.6rem;letter-spacing:.12em;color:var(--ink-3)}
-.day.on{background:var(--green);color:var(--paper);box-shadow:3px 3px 0 var(--gold)}
-.day.on small,.day.on em{color:#CBD8CE}
-.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:.5rem;margin-top:1rem}
-.slot{border:1px solid var(--line);border-radius:var(--r);background:var(--card);font-family:var(--mono);font-size:.8rem;min-height:44px;cursor:pointer;transition:background .15s}
-.slot:hover{background:var(--paper-2)}
-.slot.on{background:var(--ink);color:var(--paper)}
-.fields{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.field{display:flex;flex-direction:column;gap:.3rem}
+/* ============================================================
+   TESTIMONIALS (carousel)
+============================================================ */
+.tst-view{overflow:hidden;border-radius:var(--r-lg)}
+.tst-track{display:flex;transition:transform .55s var(--ease)}
+.tst-slide{min-width:100%;padding:.4rem}
+.tst-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(1.6rem,4vw,2.6rem);box-shadow:var(--sh-2);position:relative}
+.tst-card .quote{position:absolute;top:1.2rem;right:1.6rem;font-family:var(--serif);font-size:5rem;line-height:1;color:var(--line-2)}
+.tst-stars{display:flex;gap:.2rem;color:#F5B301;margin-bottom:1rem}
+.tst-stars .ico{width:22px;height:22px;fill:#F5B301;stroke:#F5B301}
+.tst-card blockquote{font-family:var(--serif);font-weight:500;font-size:clamp(1.05rem,2.4vw,1.4rem);color:var(--ink);line-height:1.5;margin-bottom:1.5rem;position:relative;z-index:1}
+.tst-person{display:flex;align-items:center;gap:.9rem}
+.tst-avatar{width:52px;height:52px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;box-shadow:var(--sh-blue)}
+.tst-person b{display:block;color:var(--ink);font-family:var(--serif)}
+.tst-person span{font-size:.85rem;color:var(--muted)}
+.tst-nav{display:flex;align-items:center;justify-content:center;gap:1.2rem;margin-top:1.6rem}
+.tst-arrow{width:50px;height:50px;border-radius:50%;background:var(--card);border:1px solid var(--line);box-shadow:var(--sh-1);display:flex;align-items:center;justify-content:center;color:var(--primary);transition:transform .25s,box-shadow .25s,background .25s,color .25s}
+.tst-arrow:hover{background:var(--grad);color:#fff;transform:translateY(-2px);box-shadow:var(--sh-2);border-color:transparent}
+.tst-dots{display:flex;gap:.5rem}
+.tst-dots button{width:9px;height:9px;border-radius:50%;background:var(--line);transition:width .3s var(--ease),background .3s}
+.tst-dots button.on{width:26px;background:var(--grad);border-radius:var(--r-pill)}
+
+/* ============================================================
+   BOOKING
+============================================================ */
+.booking{background:linear-gradient(180deg,var(--bg-2),var(--bg))}
+.book-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:1.4rem;align-items:start}
+.book-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-2);overflow:hidden}
+.book-block{padding:clamp(1.2rem,3vw,1.8rem);border-bottom:1px solid var(--line-2)}
+.book-block:last-child{border-bottom:0}
+.bl-head{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+.bl-num{width:30px;height:30px;border-radius:9px;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:.9rem;flex:none;box-shadow:var(--sh-blue)}
+.bl-head h3{font-size:1.1rem}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.6rem}
+.opt input{position:absolute;opacity:0;width:0;height:0}
+.opt label{display:flex;flex-direction:column;gap:.15rem;border:1.5px solid var(--line);border-radius:var(--r-sm);padding:.75rem .85rem;min-height:60px;cursor:pointer;transition:border-color .25s,background .25s,box-shadow .25s;justify-content:center}
+.opt label b{font-weight:600;font-size:.92rem;color:var(--ink)}
+.opt label small{font-size:.72rem;color:var(--muted)}
+.opt input:checked+label{border-color:var(--accent);background:linear-gradient(135deg,rgba(30,95,158,.06),rgba(18,179,156,.08));box-shadow:0 0 0 3px rgba(18,179,156,.14)}
+.opt input:focus-visible+label{outline:3px solid var(--ring);outline-offset:2px}
+.days-wrap{position:relative}
+.days{display:flex;gap:.55rem;overflow-x:auto;padding:.2rem .2rem .7rem;scroll-snap-type:x mandatory;scrollbar-width:none}
+.days::-webkit-scrollbar{display:none}
+.day{scroll-snap-align:start;min-width:74px;min-height:78px;border:1.5px solid var(--line);border-radius:var(--r-sm);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.15rem;cursor:pointer;transition:border-color .25s,background .25s,transform .2s;flex:none;background:var(--card)}
+.day:hover{transform:translateY(-2px);border-color:var(--faint)}
+.day small{font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.day b{font-family:var(--serif);font-size:1.3rem;color:var(--ink);line-height:1}
+.day em{font-style:normal;font-size:.64rem;text-transform:uppercase;color:var(--muted)}
+.day.on{border-color:transparent;background:var(--grad);box-shadow:var(--sh-blue)}
+.day.on small,.day.on b,.day.on em{color:#fff}
+.days-fade{position:absolute;top:0;bottom:.7rem;width:34px;pointer-events:none;transition:opacity .3s}
+.days-fade.l{left:0;background:linear-gradient(90deg,var(--card),transparent)}
+.days-fade.r{right:0;background:linear-gradient(-90deg,var(--card),transparent)}
+.slot-label{font-size:.82rem;color:var(--muted);margin:1rem 0 .7rem;font-weight:500}
+.slot-label b{color:var(--ink);font-weight:600}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:.5rem}
+.slot{border:1.5px solid var(--line);border-radius:var(--r-sm);background:var(--card);min-height:46px;font-weight:600;font-size:.86rem;color:var(--ink);transition:border-color .2s,background .2s,color .2s,transform .15s}
+.slot:hover{border-color:var(--accent);transform:translateY(-2px)}
+.slot.on{border-color:transparent;background:var(--grad);color:#fff;box-shadow:var(--sh-blue)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.field{display:flex;flex-direction:column;gap:.35rem}
 .field.full{grid-column:1/-1}
-.field label{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
-.field input,.field textarea{border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:.75rem .8rem;min-height:48px}
-.field textarea{min-height:80px;resize:vertical}
-.field .err{display:none;color:var(--err);font-size:.74rem;font-weight:600}
-.field.bad input{border-color:var(--err)}
+.field label{font-size:.8rem;font-weight:600;color:var(--ink)}
+.field input,.field textarea{border:1.5px solid var(--line);border-radius:var(--r-sm);background:var(--bg);padding:.75rem .85rem;min-height:48px;transition:border-color .25s,box-shadow .25s}
+.field input:focus,.field textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(18,179,156,.15);background:var(--card)}
+.field textarea{min-height:84px;resize:vertical}
+.field .err{display:none;color:var(--err);font-size:.76rem;font-weight:600}
+.field.bad input{border-color:var(--err);box-shadow:0 0 0 3px rgba(220,59,47,.12)}
 .field.bad .err{display:block}
-.wiz-ft{display:flex;justify-content:space-between;gap:.8rem;border-top:1px solid var(--line);padding:1rem clamp(1.2rem,3.5vw,2.2rem);flex-wrap:wrap}
-.hint{font-family:var(--mono);font-size:.66rem;color:var(--ink-3);align-self:center;text-transform:uppercase;letter-spacing:.06em}
-.sum{border:1px dashed var(--line);background:var(--card);padding:1.1rem;font-family:var(--mono);font-size:.8rem;display:grid;gap:.45rem;position:relative}
-.sum div{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dotted var(--hair);padding-bottom:.4rem}
-.sum div:last-child{border:0;padding:0}
-.sum dt{color:var(--ink-3);text-transform:uppercase;font-size:.64rem;letter-spacing:.1em;padding-top:.15rem}
-.sum dd{text-align:right;font-weight:600}
-.sum .seal{position:absolute;right:.9rem;top:-.9rem;transform:rotate(3deg);border:2px solid var(--green);color:var(--green);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;padding:.25rem .6rem;background:var(--paper)}
-.send{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.2rem}
-.ok-note{margin-top:.9rem;font-size:.8rem;color:var(--ink-2)}
-.step{display:none}
-.step.on{display:block}
+/* summary rail */
+.summary{position:sticky;top:90px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-2);overflow:hidden}
+.sum-head{background:linear-gradient(135deg,var(--primary-d),var(--primary-dd));color:#fff;padding:1.2rem 1.4rem}
+.sum-head .k{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#9FD3F0}
+.sum-head b{font-family:var(--serif);font-size:1.2rem;display:block;margin-top:.15rem}
+.sum-body{padding:1.2rem 1.4rem}
+.sum-row{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+.sum-row:last-of-type{border-bottom:0}
+.sum-row dt{color:var(--muted)}
+.sum-row dd{font-weight:600;color:var(--ink);text-align:right}
+.sum-row dd.empty{color:var(--faint);font-weight:400;font-style:italic}
+.sum-cta{padding:0 1.4rem 1.4rem}
+.sum-cta .btn{width:100%}
+.sum-note{font-size:.78rem;color:var(--muted);margin-top:.7rem;display:flex;gap:.4rem;align-items:flex-start}
+.sum-note .ico{width:15px;height:15px;stroke:var(--accent-d);margin-top:.15rem}
 
-/* ================= CONTACTO ================= */
-.con{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.6rem,4vw,3rem);padding-bottom:clamp(2.4rem,6vw,4rem)}
-.con-list div{display:grid;grid-template-columns:130px 1fr;gap:1rem;padding:.85rem 0;border-bottom:1px dashed var(--hair);font-size:.92rem}
-.con-list dt{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding-top:.25rem}
-.con-list a{text-decoration-color:var(--copper)}
-.con-list a:hover{color:var(--copper)}
-.geo{border:1px solid var(--line);background:var(--ink);color:var(--paper);padding:1.6rem;display:flex;flex-direction:column;gap:1rem;height:max-content}
-.geo .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:#CBB77A}
-.geo b{font-family:var(--serif);font-size:1.3rem;line-height:1.25}
-.geo p{font-size:.85rem;color:#B9B4A6}
-.socials{display:flex;flex-wrap:wrap;gap:.5rem}
-.socials a{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--hair);border-radius:var(--r);padding:.55rem .85rem;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;min-height:44px;transition:background .18s,color .18s}
-.socials a:hover{background:var(--ink);color:var(--paper)}
+/* ============================================================
+   CONTACT
+============================================================ */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem)}
+.ci{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.ci-ico{width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,rgba(30,95,158,.1),rgba(18,179,156,.12));color:var(--primary);display:flex;align-items:center;justify-content:center;flex:none}
+.ci b{display:block;font-family:var(--serif);color:var(--ink);margin-bottom:.15rem}
+.ci p,.ci a{color:var(--muted);font-size:.94rem}
+.ci a:hover{color:var(--primary)}
+.socials{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.2rem}
+.socials a{display:inline-flex;align-items:center;gap:.45rem;padding:.6rem 1rem;border:1px solid var(--line);border-radius:var(--r-pill);font-size:.84rem;font-weight:600;color:var(--ink);background:var(--card);box-shadow:var(--sh-1);transition:transform .2s,box-shadow .2s,color .2s}
+.socials a:hover{transform:translateY(-2px);box-shadow:var(--sh-2);color:var(--primary)}
+.socials .ico{width:17px;height:17px}
+.mapcard{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);position:relative;min-height:340px;background:linear-gradient(135deg,#DCEBF5,#EAF3FA)}
+.mapfacade{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;text-align:center;padding:1.5rem;cursor:pointer}
+.mapfacade .pin{width:60px;height:60px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-blue)}
+@media(prefers-reduced-motion:no-preference){.mapfacade .pin{animation:float 4s ease-in-out infinite}}
+.mapfacade b{font-family:var(--serif);color:var(--ink);font-size:1.05rem}
+.mapfacade span{color:var(--muted);font-size:.9rem;max-width:36ch}
+.mapcard iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
 
-/* ================= FOOTER ================= */
-.ft{background:var(--ink);color:#B9B4A6}
-.ft .wrap{display:flex;flex-wrap:wrap;gap:1rem 2.5rem;justify-content:space-between;align-items:center;padding-block:1.4rem}
-.ft nav{display:flex;flex-wrap:wrap;gap:1.2rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase}
-.ft nav a{text-decoration:none}
-.ft nav a:hover{color:#CBB77A}
-.ft .legal{width:100%;border-top:1px solid #3A362C;padding-top:1rem;font-size:.72rem;font-family:var(--mono)}
+/* ============================================================
+   CTA BANNER
+============================================================ */
+.cta-band{position:relative;overflow:hidden;background:var(--grad);color:#fff;border-radius:var(--r-lg);padding:clamp(2.2rem,5vw,3.5rem);text-align:center;box-shadow:var(--sh-3)}
+.cta-band::before{content:"";position:absolute;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.12);top:-160px;left:-100px}
+.cta-band::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.1);bottom:-160px;right:-80px}
+.cta-band h2{color:#fff;font-size:clamp(1.7rem,4vw,2.6rem);margin-bottom:.7rem;position:relative}
+.cta-band p{color:rgba(255,255,255,.9);margin-bottom:1.6rem;position:relative;max-width:50ch;margin-inline:auto}
+.cta-band .row{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;position:relative}
 
-/* ================= FLOAT WA ================= */
-.waf{position:fixed;right:1rem;bottom:1rem;z-index:80;width:58px;height:58px;background:var(--wa);color:#fff;border:1px solid var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;box-shadow:4px 4px 0 var(--ink);transition:transform .18s}
-.waf:hover{transform:translate(-2px,-2px)}
-.waf .ico{width:28px;height:28px}
+/* ============================================================
+   FOOTER
+============================================================ */
+.footer{background:#0C2033;color:rgba(255,255,255,.68);padding-block:clamp(2.5rem,5vw,3.5rem) 1.6rem;margin-top:clamp(3rem,6vw,5rem)}
+.footer .top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer .brand b{color:#fff}
+.footer .brand small{color:var(--faint)}
+.footer p.about{font-size:.9rem;margin-top:.9rem;max-width:38ch}
+.footer h4{color:#fff;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.9rem}
+.footer ul li{margin-bottom:.6rem}
+.footer ul a{font-size:.9rem;transition:color .2s}
+.footer ul a:hover{color:#7FE3D2}
+.footer .legal{padding-top:1.4rem;text-align:center;font-size:.8rem;color:var(--faint)}
 
-/* ================= REVEAL ================= */
-.rv{opacity:0;transform:translateY(10px);transition:opacity .35s ease-out,transform .35s ease-out}
+/* ============================================================
+   FLOATS
+============================================================ */
+.waf{position:fixed;right:1.1rem;bottom:1.1rem;z-index:120;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(37,211,102,.45);transition:transform .25s}
+.waf:hover{transform:scale(1.09)}
+.waf .ico{width:32px;height:32px;stroke:#fff}
+@media(prefers-reduced-motion:no-preference){.waf::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:ripple 2.2s ease-out infinite}}
+@keyframes ripple{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.6);opacity:0}}
+.totop{position:fixed;right:1.1rem;bottom:5.7rem;z-index:119;width:46px;height:46px;border-radius:50%;background:var(--card);color:var(--primary);border:1px solid var(--line);box-shadow:var(--sh-2);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .3s,visibility .3s,transform .3s}
+.totop.show{opacity:1;visibility:visible;transform:none}
+
+/* ============================================================
+   REVEAL
+============================================================ */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.strip .in{animation:none}*{scroll-behavior:auto!important}}
-
-/* ================= RESPONSIVE ================= */
-@media(max-width:980px){
-  .hero .wrap{grid-template-columns:1fr}
-  .hero-r{border-left:0;border-top:1px solid var(--line);min-height:46vh}
-  .doc-grid{grid-template-columns:1fr}
-  .notes{grid-template-columns:1fr}
-  .con{grid-template-columns:1fr}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  *{scroll-behavior:auto!important}
+  .blob,.eye-ring,.eye-emblem,.floaty,.hero-badge .dot{animation:none!important}
 }
-@media(max-width:760px){
-  .hd .wrap{flex-wrap:wrap}
-  .brand{width:100%;border-bottom:1px solid var(--hair)}
-  .nav{width:100%}
-  .nav a{border-left:0;border-right:1px solid var(--hair);padding:0 .85rem;min-height:48px}
-  .svc{grid-template-columns:1fr}
-  .svc article:nth-child(odd){border-right:0;padding-right:0}
-  .svc article:nth-child(even){padding-left:0}
-  .row{grid-template-columns:auto minmax(0,1fr)}
-  .row .price{grid-column:2;text-align:left}
-  .row .go{grid-column:2;justify-self:start}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media(max-width:1000px){
+  .hero .wrap{grid-template-columns:1fr;text-align:center}
+  .hero-lead{margin-inline:auto}
+  .hero-cta,.hero-chips{justify-content:center}
+  .hero-visual{order:-1;min-height:auto;padding:1rem 0 2rem}
+  .eye-stage{width:min(64%,280px)}
+  .doctor .wrap{grid-template-columns:1fr}
+  .dcard{max-width:400px;margin:0 auto}
+  .book-grid{grid-template-columns:1fr}
+  .summary{position:static}
+  .contact .wrap{grid-template-columns:1fr}
+  .footer .top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .menu,.hd-cta .btn-primary{display:none}
+  .burger{display:flex}
+  .stats .grid{grid-template-columns:1fr 1fr;gap:1.4rem}
+  .stat+.stat::before{display:none}
+  .stat:nth-child(3)::before,.stat:nth-child(4)::before{display:none}
+}
+@media(max-width:560px){
   .fields{grid-template-columns:1fr}
-  .wiz-top span i{display:none}
+  .footer .top{grid-template-columns:1fr}
+  .floaty{display:none}
+  .f2{display:flex}
+}
+@media(max-width:400px){
+  .stats .grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
+<!-- ICON SPRITE -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
-<symbol id="s-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-<symbol id="s-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="1"/><path d="M16 2v4M8 2v4M3 9h18"/></symbol>
-<symbol id="s-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
-<symbol id="s-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.2-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 8.8c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.2 0 .4 0 .5l-.5.6c-.1.2-.2.3 0 .6a6 6 0 0 0 2.6 2.3c.3.1.4.1.6-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.4 0 .5-.2 1.4-.6 1.6-.4.3-1.4.6-2.6.2a8 8 0 0 1-4.7-4.4c-.4-1-.4-1.9-.4-2.2Z"/></symbol>
-<symbol id="s-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-<symbol id="s-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-<symbol id="s-dl" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></symbol>
-<symbol id="s-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></symbol>
+<symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9l4-6Z"/><path d="M2 9h20M12 3 8 9l4 12 4-12-4-6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z"/></symbol>
+<symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 2.7 6.3 9a8 8 0 1 0 11.4 0L12 2.7Z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.2-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 8.8c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.2 0 .4 0 .5l-.5.6c-.1.2-.2.3 0 .6a6 6 0 0 0 2.6 2.3c.3.1.4.1.6-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.4 0 .5-.2 1.4-.6 1.6-.4.3-1.4.6-2.6.2a8 8 0 0 1-4.7-4.4c-.4-1-.4-1.9-.4-2.2Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.9 7 22l5-3 5 3-1.2-8.1"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+<symbol id="i-medal" viewBox="0 0 24 24"><path d="M7.2 2h9.6l-3 6H10.2l-3-6Z"/><circle cx="12" cy="15" r="6"/><path d="M12 12v3l2 1"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-chevL" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="i-chevR" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
 </defs>
 </svg>
 
-<!-- FILE BAR -->
-<div class="filebar" role="complementary">
-  <div class="wrap">
-    <span><b>EXP-OFT/CDMX</b> · Av. Insurgentes Sur 1602 — 402</span>
-    <span>TEL <a href="tel:+525555458811">(55) 5545 8811</a> · <a href="tel:+525541881244">(55) 4188 1244</a></span>
-    <span>LUN–VIE 09–19 H · SÁB 09–14 H</span>
-  </div>
-</div>
-
 <!-- HEADER -->
-<header class="hd">
+<header class="hd" id="hd">
   <div class="wrap">
-    <a class="brand" href="#inicio">
-      <img src="assets/logo.png" alt="Emblema del Dr. Juan Daniel de la Torre Tovar">
+    <a class="brand" href="#top" aria-label="Inicio">
+      <img src="assets/logo.png" alt="Logo del Dr. Juan Daniel de la Torre Tovar">
       <span><b>de la Torre Tovar</b><small>Oftalmología · CDMX</small></span>
     </a>
-    <nav class="nav" aria-label="Índice">
-      <a href="#procedimientos"><i>01</i>Procedimientos</a>
-      <a href="#servicios"><i>02</i>Servicios</a>
-      <a href="#doctor"><i>03</i>El Doctor</a>
-      <a href="#testimonios"><i>04</i>Notas</a>
-      <a href="#contacto"><i>05</i>Contacto</a>
-      <a class="cta" href="#agendar"><i>→</i>Agendar cita</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#procedimientos">Procedimientos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#doctor">El Doctor</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
     </nav>
+    <div class="hd-cta">
+      <a class="btn btn-primary" href="#agendar"><svg class="ico"><use href="#i-cal"/></svg>Agendar cita</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><svg class="ico"><use href="#i-menu"/></svg></button>
+    </div>
   </div>
 </header>
 
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menú">
+    <div class="drawer-top">
+      <span class="brand"><img src="assets/logo.png" alt=""><b>Menú</b></span>
+      <button class="drawer-close" id="drawerClose" aria-label="Cerrar menú"><svg class="ico"><use href="#i-x"/></svg></button>
+    </div>
+    <a class="dl" href="#procedimientos">Procedimientos <svg class="ico"><use href="#i-arrow"/></svg></a>
+    <a class="dl" href="#servicios">Servicios <svg class="ico"><use href="#i-arrow"/></svg></a>
+    <a class="dl" href="#doctor">El Doctor <svg class="ico"><use href="#i-arrow"/></svg></a>
+    <a class="dl" href="#testimonios">Testimonios <svg class="ico"><use href="#i-arrow"/></svg></a>
+    <a class="dl" href="#contacto">Contacto <svg class="ico"><use href="#i-arrow"/></svg></a>
+    <a class="btn btn-primary" href="#agendar"><svg class="ico"><use href="#i-cal"/></svg>Agendar cita</a>
+  </div>
+</div>
+
+<span id="top"></span>
 <main id="main">
 
 <!-- HERO -->
-<section class="hero" id="inicio">
+<section class="hero">
+  <div class="hero-bg"></div>
+  <span class="blob blob-1"></span><span class="blob blob-2"></span>
   <div class="wrap">
-    <div class="hero-l">
-      <p class="tag">Expediente abierto · Oftalmólogo certificado</p>
-      <h1 class="sr">Ver bien es vivir mejor. Agenda tu valoración hoy.</h1>
-      <p class="lead">Cirugía ocular con láser de última generación. Más de 15 años devolviendo visión clara con la disciplina y precisión de la sanidad militar.</p>
-      <dl class="meta">
-        <div><dt>Céd. Profesional</dt><dd class="mono">1742564</dd></div>
-        <div><dt>Céd. Especialidad</dt><dd class="mono">4011033</dd></div>
-        <div><dt>Formación</dt><dd class="mono">U.A.N.L. · C.M.N. IMSS · EE.UU.</dd></div>
-        <div><dt>Pacientes</dt><dd class="mono">+8,000 · 98% satisfacción</dd></div>
-      </dl>
-      <div class="hero-cta">
-        <a class="btn btn-ink" href="#agendar"><svg class="ico"><use href="#s-cal"/></svg>Agendar valoración</a>
-        <a class="btn btn-line" href="https://wa.me/525555458811?text=Hola,%20quiero%20información" target="_blank" rel="noopener"><svg class="ico"><use href="#s-wa"/></svg>WhatsApp</a>
+    <div class="hero-content">
+      <span class="hero-badge rv"><span class="dot"></span> Oftalmólogo certificado · +15 años</span>
+      <h1 class="rv d1">Recupera tu visión con <span class="grad">precisión de especialista</span></h1>
+      <p class="hero-lead rv d2">Cirugía ocular con tecnología láser de última generación. Miles de pacientes ya ven claro de nuevo — con la disciplina y el rigor de una trayectoria en la sanidad militar.</p>
+      <div class="hero-cta rv d3">
+        <a class="btn btn-primary" href="#agendar"><svg class="ico"><use href="#i-cal"/></svg>Agendar valoración</a>
+        <a class="btn btn-ghost" href="https://wa.me/525555458811?text=Hola,%20quiero%20información" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+      <div class="hero-chips rv d4">
+        <span class="chip"><svg class="ico"><use href="#i-shield"/></svg>Céd. Prof. 1742564</span>
+        <span class="chip"><svg class="ico"><use href="#i-medal"/></svg>Céd. Esp. 4011033</span>
+        <span class="chip"><svg class="ico"><use href="#i-cap"/></svg>U.A.N.L. · C.M.N.</span>
       </div>
     </div>
-    <div class="hero-r" aria-hidden="true">
-      <div class="reticle"></div>
-      <div class="snellen">
-        <div class="sn-row sn-1"><span>Ver</span><i>20/200</i></div>
-        <div class="sn-row sn-2"><span>bien es</span><i>20/100</i></div>
-        <div class="sn-row sn-3"><span>vivir mejor</span><i>20/40</i></div>
-        <div class="sn-row sn-4"><span>agenda tu valoración hoy</span><i>20/20</i></div>
+    <div class="hero-visual rv d2" aria-hidden="true">
+      <div class="eye-stage">
+        <span class="eye-ring"></span><span class="eye-ring r2"></span>
+        <span class="eye-disc"></span>
+        <img class="eye-emblem" src="assets/logo.png" alt="">
+        <div class="floaty f1"><span class="i"><svg class="ico"><use href="#i-eye"/></svg></span><span><b>20/20</b><span>visión clara</span></span></div>
+        <div class="floaty f2"><span class="i"><svg class="ico"><use href="#i-zap"/></svg></span><span><b>LASIK</b><span>tecnología láser</span></span></div>
+        <div class="floaty f3"><span class="i"><svg class="ico"><use href="#i-award"/></svg></span><span><b>+8,000</b><span>pacientes</span></span></div>
       </div>
+    </div>
+  </div>
+  <!-- STATS -->
+  <div class="wrap stats rv">
+    <div class="grid">
+      <div class="stat"><div class="n"><span data-count="15">0</span>+</div><div class="l">Años de experiencia</div></div>
+      <div class="stat"><div class="n"><span data-count="8000" data-suffix="">0</span>+</div><div class="l">Pacientes atendidos</div></div>
+      <div class="stat"><div class="n"><span data-count="98">0</span>%</div><div class="l">Satisfacción</div></div>
+      <div class="stat"><div class="n"><span data-count="9">0</span></div><div class="l">Especialidades</div></div>
     </div>
   </div>
 </section>
 
-<!-- STRIP -->
-<div class="strip" aria-hidden="true">
-  <div class="in">
-    <span>LASIK <em>$9,700</em> ambos ojos</span><span>Cataratas <em>$12,900</em> por ojo</span><span>Carnosidad <em>$8,250</em></span><span>Cross-Linking <em>$9,500</em></span><span>Glaucoma <em>desde $19,500</em></span><span>Polanco · CDMX</span>
-    <span>LASIK <em>$9,700</em> ambos ojos</span><span>Cataratas <em>$12,900</em> por ojo</span><span>Carnosidad <em>$8,250</em></span><span>Cross-Linking <em>$9,500</em></span><span>Glaucoma <em>desde $19,500</em></span><span>Polanco · CDMX</span>
-  </div>
-</div>
-
-<!-- PROCEDIMIENTOS / LEDGER -->
+<!-- PROCEDIMIENTOS -->
 <section class="sec" id="procedimientos">
   <div class="wrap">
-    <header class="sec-hd rv">
-      <span class="no">01 / TARIFARIO</span>
+    <div class="sec-head rv">
+      <span class="eyebrow">Tarifario transparente</span>
       <h2>Procedimientos y promociones</h2>
-      <p>Precios transparentes, sin letra pequeña. Cada procedimiento incluye valoración con el especialista.</p>
-    </header>
-    <div class="ledger">
-      <div class="row hot rv">
-        <span class="stamp">Promoción especial</span>
-        <span class="n mono">P-01</span>
-        <span class="what"><b>Cirugía LASIK</b><small>Corrige miopía, astigmatismo e hipermetropía</small></span>
-        <span class="price">$9,700<small>ambos ojos</small></span>
-        <button class="go" data-proc="Cirugía LASIK">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
-      </div>
-      <div class="row rv">
-        <span class="n mono">P-02</span>
-        <span class="what"><b>Cirugía de Cataratas</b><small>Lente intraocular · libérate de la ceguera por cataratas</small></span>
-        <span class="price">$12,900<small>por ojo</small></span>
-        <button class="go" data-proc="Cirugía de Cataratas">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
-      </div>
-      <div class="row rv">
-        <span class="n mono">P-03</span>
-        <span class="what"><b>Cirugía de Carnosidad</b><small>Extirpación de pterigión que cubre la córnea</small></span>
-        <span class="price">$8,250<small>por carnosidad</small></span>
-        <button class="go" data-proc="Cirugía de Carnosidad (Pterigión)">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
-      </div>
-      <div class="row rv">
-        <span class="n mono">P-04</span>
-        <span class="what"><b>Cross-Linking</b><small>Detiene el avance del queratocono</small></span>
-        <span class="price">$9,500<small>ambos ojos</small></span>
-        <button class="go" data-proc="Cross-Linking">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
-      </div>
-      <div class="row rv">
-        <span class="n mono">P-05</span>
-        <span class="what"><b>Cirugía de Glaucoma</b><small>Reduce la presión intraocular, protege el nervio óptico</small></span>
-        <span class="price">$19,500<small>desde</small></span>
-        <button class="go" data-proc="Cirugía de Glaucoma">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
-      </div>
-      <div class="row rv">
-        <span class="n mono">P-06</span>
-        <span class="what"><b>Revisión Oftalmológica</b><small>Diagnóstico completo, fondo de ojo y prescripción óptica</small></span>
-        <span class="price">Consulta<small>&nbsp;</small></span>
-        <button class="go" data-proc="Revisión Oftalmológica">Agendar<svg class="ico"><use href="#s-arrow"/></svg></button>
-      </div>
+      <p>Precios claros, sin letra pequeña. Cada procedimiento incluye valoración con el especialista.</p>
     </div>
-    <p class="ledger-note">— Consulta condiciones al agendar · Precios en MXN —</p>
+    <div class="toggle rv" id="toggle" role="tablist" aria-label="Filtrar procedimientos">
+      <span class="pill" id="togPill"></span>
+      <button class="on" data-filter="all" role="tab" aria-selected="true"><span>Todos</span></button>
+      <button data-filter="cir" role="tab" aria-selected="false"><span>Cirugías</span></button>
+      <button data-filter="con" role="tab" aria-selected="false"><span>Consultas</span></button>
+    </div>
+    <div class="proc-grid" id="procGrid">
+      <article class="proc feat rv" data-cat="cir">
+        <span class="proc-tag">Promoción especial</span>
+        <div class="proc-ico"><svg class="ico"><use href="#i-zap"/></svg></div>
+        <h3>Cirugía LASIK</h3>
+        <p class="desc">Corrige miopía, astigmatismo e hipermetropía con láser de última generación.</p>
+        <div class="price"><b>$9,700</b><span>ambos ojos</span></div>
+        <button class="book-btn" data-proc="Cirugía LASIK">Agendar<svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+      <article class="proc rv d1" data-cat="cir">
+        <span class="proc-tag">Promoción</span>
+        <div class="proc-ico"><svg class="ico"><use href="#i-gem"/></svg></div>
+        <h3>Cirugía de Cataratas</h3>
+        <p class="desc">Implante de lente intraocular premium. Libérate de la ceguera por cataratas.</p>
+        <div class="price"><b>$12,900</b><span>por ojo</span></div>
+        <button class="book-btn" data-proc="Cirugía de Cataratas">Agendar<svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+      <article class="proc rv d2" data-cat="cir">
+        <span class="proc-tag">Promoción</span>
+        <div class="proc-ico"><svg class="ico"><use href="#i-sparkle"/></svg></div>
+        <h3>Cirugía de Carnosidad</h3>
+        <p class="desc">Extirpación del pterigión (carnosidad) que cubre la córnea.</p>
+        <div class="price"><b>$8,250</b><span>por carnosidad</span></div>
+        <button class="book-btn" data-proc="Cirugía de Carnosidad (Pterigión)">Agendar<svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+      <article class="proc rv" data-cat="cir">
+        <span class="proc-tag">Promoción</span>
+        <div class="proc-ico"><svg class="ico"><use href="#i-leaf"/></svg></div>
+        <h3>Cross-Linking</h3>
+        <p class="desc">Detiene el avance del queratocono y estabiliza la córnea.</p>
+        <div class="price"><b>$9,500</b><span>ambos ojos</span></div>
+        <button class="book-btn" data-proc="Cross-Linking">Agendar<svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+      <article class="proc rv d1" data-cat="cir">
+        <div class="proc-ico"><svg class="ico"><use href="#i-shield"/></svg></div>
+        <h3>Cirugía de Glaucoma</h3>
+        <p class="desc">Reduce la presión intraocular y protege tu nervio óptico.</p>
+        <div class="price"><b>Desde $19,500</b></div>
+        <button class="book-btn" data-proc="Cirugía de Glaucoma">Agendar<svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+      <article class="proc rv d2" data-cat="con">
+        <span class="proc-tag">Consulta</span>
+        <div class="proc-ico"><svg class="ico"><use href="#i-eye"/></svg></div>
+        <h3>Revisión Oftalmológica</h3>
+        <p class="desc">Diagnóstico completo, fondo de ojo y prescripción óptica. Adultos y niños.</p>
+        <div class="price"><b>Consulta</b></div>
+        <button class="book-btn" data-proc="Revisión Oftalmológica">Agendar<svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+    </div>
+    <p style="font-size:.82rem;color:var(--muted);margin-top:1.4rem">Precios en MXN · Consulta condiciones al agendar.</p>
   </div>
 </section>
 
 <!-- SERVICIOS -->
-<section class="sec" id="servicios">
+<section class="sec" id="servicios" style="background:linear-gradient(180deg,var(--bg),var(--bg-2))">
   <div class="wrap">
-    <header class="sec-hd rv">
-      <span class="no">02 / ÍNDICE CLÍNICO</span>
-      <h2>Atención integral de la visión</h2>
+    <div class="sec-head center rv">
+      <span class="eyebrow">Atención integral</span>
+      <h2>Todo para la salud de tus ojos</h2>
       <p>Diagnóstico, tratamiento y cirugía para adultos y niños con equipo de última generación.</p>
-    </header>
-    <div class="svc">
-      <article class="rv"><span class="n">i.</span><div><h3>Consulta Oftalmológica</h3><p>Revisión completa, agudeza visual, fondo de ojo y diagnóstico. Adultos y niños.</p></div></article>
-      <article class="rv"><span class="n">ii.</span><div><h3>Cirugía LASIK con Láser</h3><p>Corrección definitiva de miopía, hipermetropía y astigmatismo.</p></div></article>
-      <article class="rv"><span class="n">iii.</span><div><h3>Cataratas con Lente Intraocular</h3><p>Implante de lente premium. Recupera la visión nítida.</p></div></article>
-      <article class="rv"><span class="n">iv.</span><div><h3>Glaucoma</h3><p>Detección temprana y tratamiento médico-quirúrgico.</p></div></article>
-      <article class="rv"><span class="n">v.</span><div><h3>Retina y Vítreo</h3><p>Retinopatía diabética, desprendimiento de retina. OCT de alta resolución.</p></div></article>
-      <article class="rv"><span class="n">vi.</span><div><h3>Cross-Linking (Queratocono)</h3><p>Detiene la progresión del queratocono y estabiliza la córnea.</p></div></article>
-      <article class="rv"><span class="n">vii.</span><div><h3>Pterigión (Carnosidad)</h3><p>Extirpación quirúrgica de la carnosidad que cubre la córnea.</p></div></article>
-      <article class="rv"><span class="n">viii.</span><div><h3>Limpieza de Lente Intraocular</h3><p>Láser YAG para opacificación de cápsula posterior post-catarata.</p></div></article>
-      <article class="rv"><span class="n">ix.</span><div><h3>Ojo Seco y Párpados</h3><p>Síndrome de ojo seco, blefaritis y cirugía de párpados.</p></div></article>
+    </div>
+    <div class="serv-grid">
+      <div class="serv rv"><div class="serv-ico"><svg class="ico"><use href="#i-eye"/></svg></div><h3>Consulta Oftalmológica</h3><p>Revisión completa, agudeza visual, fondo de ojo y diagnóstico.</p></div>
+      <div class="serv rv d1"><div class="serv-ico"><svg class="ico"><use href="#i-zap"/></svg></div><h3>Cirugía LASIK con Láser</h3><p>Corrección definitiva de miopía, hipermetropía y astigmatismo.</p></div>
+      <div class="serv rv d2"><div class="serv-ico"><svg class="ico"><use href="#i-gem"/></svg></div><h3>Cataratas con Lente Intraocular</h3><p>Implante de lente premium. Recupera la visión nítida.</p></div>
+      <div class="serv rv d3"><div class="serv-ico"><svg class="ico"><use href="#i-shield"/></svg></div><h3>Glaucoma</h3><p>Detección temprana y tratamiento médico-quirúrgico.</p></div>
+      <div class="serv rv"><div class="serv-ico"><svg class="ico"><use href="#i-activity"/></svg></div><h3>Retina y Vítreo</h3><p>Retinopatía diabética, desprendimiento de retina. OCT de alta resolución.</p></div>
+      <div class="serv rv d1"><div class="serv-ico"><svg class="ico"><use href="#i-leaf"/></svg></div><h3>Cross-Linking (Queratocono)</h3><p>Detiene la progresión del queratocono y estabiliza la córnea.</p></div>
+      <div class="serv rv d2"><div class="serv-ico"><svg class="ico"><use href="#i-sparkle"/></svg></div><h3>Pterigión (Carnosidad)</h3><p>Extirpación quirúrgica de la carnosidad que cubre la córnea.</p></div>
+      <div class="serv rv d3"><div class="serv-ico"><svg class="ico"><use href="#i-scan"/></svg></div><h3>Limpieza de Lente Intraocular</h3><p>Láser YAG para opacificación de cápsula posterior post-catarata.</p></div>
+      <div class="serv rv"><div class="serv-ico"><svg class="ico"><use href="#i-droplet"/></svg></div><h3>Ojo Seco y Párpados</h3><p>Síndrome de ojo seco, blefaritis y cirugía de párpados.</p></div>
     </div>
   </div>
 </section>
 
 <!-- DOCTOR -->
-<section class="sec doc" id="doctor">
+<section class="sec doctor" id="doctor">
   <div class="wrap">
-    <header class="sec-hd rv">
-      <span class="no">03 / HOJA DE SERVICIO</span>
-      <h2>Dr. Juan Daniel de la Torre Tovar</h2>
-      <p>Trayectoria, disciplina y precisión al servicio de tu visión.</p>
-    </header>
-    <div class="doc-grid">
-      <aside class="doc-card rv">
-        <img src="assets/logo.png" alt="Emblema de la clínica">
-        <h3>de la Torre Tovar</h3>
-        <p class="rol">Oftalmólogo Especialista</p>
-        <div class="doc-tags">
-          <span>CMO Certificado</span><span>+15 años</span><span>Tecnología láser</span><span>+8,000 pacientes</span>
-        </div>
-      </aside>
-      <div class="rv">
-        <ol class="srv-rec">
-          <li class="rec">
-            <span class="k">Formación</span>
-            <b>Médico Cirujano — U.A.N.L.</b>
-            <p>Universidad Autónoma de Nuevo León, con mención honorífica.</p>
-          </li>
-          <li class="rec">
-            <span class="k">Especialidad</span>
-            <b>Oftalmología — Centro Médico Nacional</b>
-            <p>C.M.N., Instituto Mexicano del Seguro Social (IMSS).</p>
-          </li>
-          <li class="rec">
-            <span class="k">Alta especialidad</span>
-            <b>Cirugía Refractiva y Retina</b>
-            <p>Formación de alta especialidad en Estados Unidos.</p>
-          </li>
-          <li class="rec mil">
-            <span class="k">Sanidad militar</span>
-            <b>Disciplina de servicio</b>
-            <p>Con formación y trayectoria en el ámbito de la sanidad militar: rigor, precisión y vocación de servicio en cada procedimiento.</p>
-          </li>
-        </ol>
-        <p class="ced">CÉD. PROFESIONAL 1742564 · CÉD. ESPECIALIDAD 4011033</p>
+    <aside class="dcard rv">
+      <div class="dcard-emblem"><img src="assets/logo.png" alt="Emblema de la clínica"></div>
+      <h3>Dr. de la Torre Tovar</h3>
+      <div class="role">Oftalmólogo Especialista</div>
+      <div class="dcard-tags">
+        <span><svg class="ico"><use href="#i-check"/></svg>CMO Certificado</span>
+        <span><svg class="ico"><use href="#i-award"/></svg>+15 años</span>
+        <span><svg class="ico"><use href="#i-zap"/></svg>Tecnología láser</span>
+        <span><svg class="ico"><use href="#i-users"/></svg>+8,000 pacientes</span>
       </div>
+    </aside>
+    <div class="rv d1">
+      <span class="eyebrow">Conoce al especialista</span>
+      <h2>Trayectoria, disciplina y precisión</h2>
+      <p class="intro">Con más de 15 años dedicados a la salud visual, el Dr. Juan Daniel de la Torre Tovar ha realizado miles de procedimientos exitosos con los más altos estándares de calidad y tecnología de vanguardia.</p>
+      <div class="timeline">
+        <div class="tl"><span class="k">Formación</span><b>Médico Cirujano — U.A.N.L.</b><p>Universidad Autónoma de Nuevo León, con mención honorífica.</p></div>
+        <div class="tl"><span class="k">Especialidad</span><b>Oftalmología — Centro Médico Nacional</b><p>C.M.N., Instituto Mexicano del Seguro Social (IMSS).</p></div>
+        <div class="tl"><span class="k">Alta especialidad</span><b>Cirugía Refractiva y Retina</b><p>Formación de alta especialidad en Estados Unidos.</p></div>
+        <div class="tl mil"><span class="k">Sanidad militar</span><b>Vocación de servicio</b><p>Con formación y trayectoria en el ámbito de la sanidad militar: rigor, precisión y disciplina en cada procedimiento.</p></div>
+      </div>
+      <p class="ced">Céd. Profesional 1742564 · Céd. Especialidad 4011033</p>
     </div>
   </div>
 </section>
@@ -499,130 +671,155 @@ input,select,textarea{font:inherit;color:inherit}
 <!-- TESTIMONIOS -->
 <section class="sec" id="testimonios">
   <div class="wrap">
-    <header class="sec-hd rv">
-      <span class="no">04 / NOTAS DE PACIENTES</span>
-      <h2>Lo que dicen quienes ya ven claro</h2>
-    </header>
-    <div class="notes">
-      <figure class="note rv">
-        <div class="note-tab"><span>Nota 01 · LASIK</span><span class="st" aria-label="5 de 5 estrellas">★★★★★</span></div>
-        <blockquote>"Me operó de LASIK hace 3 meses. Tenía −6 de miopía y ahora veo perfecto sin lentes. El procedimiento fue rápido y sin dolor. 100% recomendado."</blockquote>
-        <figcaption><b>María González</b><span>Cirugía LASIK · CDMX</span></figcaption>
-      </figure>
-      <figure class="note rv">
-        <div class="note-tab"><span>Nota 02 · Glaucoma</span><span class="st" aria-label="5 de 5 estrellas">★★★★★</span></div>
-        <blockquote>"Me diagnosticaron glaucoma temprano gracias a la revisión completa. El tratamiento ha sido excelente y mi visión está estable. Muy agradecido."</blockquote>
-        <figcaption><b>Roberto López</b><span>Tratamiento Glaucoma · Polanco</span></figcaption>
-      </figure>
-      <figure class="note rv">
-        <div class="note-tab"><span>Nota 03 · Cataratas</span><span class="st" aria-label="5 de 5 estrellas">★★★★★</span></div>
-        <blockquote>"Mi mamá fue operada de cataratas con excelentes resultados. El doctor explica todo con paciencia. Las instalaciones son modernas y limpias."</blockquote>
-        <figcaption><b>Ana Contreras</b><span>Cirugía de Cataratas · CDMX</span></figcaption>
-      </figure>
+    <div class="sec-head center rv">
+      <span class="eyebrow">Testimonios</span>
+      <h2>Pacientes que ya ven claro</h2>
+    </div>
+    <div class="rv" style="max-width:820px;margin-inline:auto">
+      <div class="tst-view">
+        <div class="tst-track" id="tstTrack">
+          <div class="tst-slide"><figure class="tst-card">
+            <span class="quote" aria-hidden="true">”</span>
+            <div class="tst-stars" aria-label="5 de 5"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div>
+            <blockquote>El Dr. de la Torre Tovar me operó de LASIK hace 3 meses. Tenía −6 de miopía y ahora veo perfecto sin lentes. El procedimiento fue rápido y sin dolor. 100% recomendado.</blockquote>
+            <figcaption class="tst-person"><span class="tst-avatar">MG</span><span><b>María González</b><span>Cirugía LASIK · CDMX</span></span></figcaption>
+          </figure></div>
+          <div class="tst-slide"><figure class="tst-card">
+            <span class="quote" aria-hidden="true">”</span>
+            <div class="tst-stars" aria-label="5 de 5"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div>
+            <blockquote>Me diagnosticaron glaucoma temprano gracias a la revisión completa. El tratamiento ha sido excelente y mi visión está estable. Muy agradecido con el doctor.</blockquote>
+            <figcaption class="tst-person"><span class="tst-avatar">RL</span><span><b>Roberto López</b><span>Tratamiento Glaucoma · Polanco</span></span></figcaption>
+          </figure></div>
+          <div class="tst-slide"><figure class="tst-card">
+            <span class="quote" aria-hidden="true">”</span>
+            <div class="tst-stars" aria-label="5 de 5"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div>
+            <blockquote>Mi mamá fue operada de cataratas con excelentes resultados. El doctor es muy atento, explica todo con paciencia. Las instalaciones son modernas y limpias.</blockquote>
+            <figcaption class="tst-person"><span class="tst-avatar">AC</span><span><b>Ana Contreras</b><span>Cirugía de Cataratas · CDMX</span></span></figcaption>
+          </figure></div>
+        </div>
+      </div>
+      <div class="tst-nav">
+        <button class="tst-arrow" id="tstPrev" aria-label="Anterior"><svg class="ico"><use href="#i-chevL"/></svg></button>
+        <div class="tst-dots" id="tstDots"></div>
+        <button class="tst-arrow" id="tstNext" aria-label="Siguiente"><svg class="ico"><use href="#i-chevR"/></svg></button>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- AGENDAR -->
-<section class="sec book" id="agendar">
+<section class="sec booking" id="agendar">
   <div class="wrap">
-    <header class="sec-hd rv">
-      <span class="no">05 / SOLICITUD DE CITA</span>
-      <h2>Agenda en tres pasos</h2>
-      <p>Elige procedimiento, día y hora. Al confirmar, tu solicitud se envía por WhatsApp al consultorio y puedes guardar el recordatorio en tu calendario. Sin cuentas, sin esperas.</p>
-    </header>
-    <form class="wiz rv" id="wiz" novalidate>
-      <div class="wiz-top" aria-hidden="true">
-        <span id="tab1" class="on"><i>①</i> Procedimiento</span>
-        <span id="tab2"><i>②</i> Fecha y hora</span>
-        <span id="tab3"><i>③</i> Tus datos</span>
-        <span id="tab4"><i>✓</i> Confirmar</span>
+    <div class="sec-head center rv">
+      <span class="eyebrow">Agenda en línea</span>
+      <h2>Solicita tu cita en un minuto</h2>
+      <p>Elige procedimiento, día y hora. Tu solicitud se envía por WhatsApp y el consultorio confirma la disponibilidad contigo.</p>
+    </div>
+    <form class="book-grid rv" id="bookForm" novalidate>
+      <div class="book-card">
+        <!-- 1 procedimiento -->
+        <fieldset class="book-block">
+          <div class="bl-head"><span class="bl-num">1</span><h3>¿Qué necesitas?</h3></div>
+          <div class="opts" id="procOpts"></div>
+        </fieldset>
+        <!-- 2 fecha -->
+        <fieldset class="book-block">
+          <div class="bl-head"><span class="bl-num">2</span><h3>Elige el día</h3></div>
+          <div class="days-wrap">
+            <div class="days" id="days" role="listbox" aria-label="Días disponibles"></div>
+            <span class="days-fade l" id="fadeL" style="opacity:0"></span>
+            <span class="days-fade r" id="fadeR"></span>
+          </div>
+        </fieldset>
+        <!-- 3 hora -->
+        <fieldset class="book-block">
+          <div class="bl-head"><span class="bl-num">3</span><h3>Elige la hora</h3></div>
+          <p class="slot-label" id="slotLabel">Selecciona primero un día · <span style="color:var(--muted)">Lun–Vie 09–19 h · Sáb 09–14 h</span></p>
+          <div class="slots" id="slots"></div>
+        </fieldset>
+        <!-- 4 datos -->
+        <fieldset class="book-block">
+          <div class="bl-head"><span class="bl-num">4</span><h3>Tus datos</h3></div>
+          <div class="fields">
+            <div class="field" id="fN">
+              <label for="inN">Nombre completo *</label>
+              <input id="inN" name="nombre" autocomplete="name" required>
+              <span class="err">Escribe tu nombre</span>
+            </div>
+            <div class="field" id="fT">
+              <label for="inT">Teléfono (10 dígitos) *</label>
+              <input id="inT" name="tel" inputmode="tel" autocomplete="tel" required>
+              <span class="err">Teléfono a 10 dígitos</span>
+            </div>
+            <div class="field full">
+              <label for="inX">Notas para el doctor (opcional)</label>
+              <textarea id="inX" name="notas" placeholder="Ej. uso lentes desde niño, diabetes, cirugía previa…"></textarea>
+            </div>
+          </div>
+        </fieldset>
       </div>
-      <div aria-live="polite">
 
-      <!-- PASO 1 -->
-      <fieldset class="step on wiz-body" id="st1">
-        <legend><h3>1 · ¿Qué procedimiento necesitas?</h3></legend>
-        <div class="opts" id="procs"></div>
-      </fieldset>
-
-      <!-- PASO 2 -->
-      <fieldset class="step wiz-body" id="st2">
-        <legend><h3>2 · Elige día y hora</h3></legend>
-        <div class="days" id="days" role="listbox" aria-label="Días disponibles"></div>
-        <div class="slots" id="slots" aria-label="Horarios disponibles"></div>
-        <p class="hint" id="slotHint" style="margin-top:.8rem">Lun–Vie 09:00–19:00 · Sáb 09:00–14:00 · Domingos cerrado</p>
-      </fieldset>
-
-      <!-- PASO 3 -->
-      <fieldset class="step wiz-body" id="st3">
-        <legend><h3>3 · Tus datos de contacto</h3></legend>
-        <div class="fields">
-          <div class="field" id="fN">
-            <label for="inN">Nombre completo *</label>
-            <input id="inN" name="nombre" autocomplete="name" required>
-            <span class="err">Escribe tu nombre</span>
-          </div>
-          <div class="field" id="fT">
-            <label for="inT">Teléfono (10 dígitos) *</label>
-            <input id="inT" name="tel" inputmode="tel" autocomplete="tel" required>
-            <span class="err">Teléfono a 10 dígitos</span>
-          </div>
-          <div class="field full">
-            <label for="inX">Notas para el doctor (opcional)</label>
-            <textarea id="inX" name="notas" placeholder="Ej. uso lentes desde niño, diabetes, cirugía previa…"></textarea>
-          </div>
+      <!-- SUMMARY -->
+      <aside class="summary">
+        <div class="sum-head"><span class="k">Resumen de tu solicitud</span><b>Cita oftalmológica</b></div>
+        <div class="sum-body">
+          <div class="sum-row"><dt>Procedimiento</dt><dd class="empty" id="sProc">Por elegir</dd></div>
+          <div class="sum-row"><dt>Fecha</dt><dd class="empty" id="sDate">Por elegir</dd></div>
+          <div class="sum-row"><dt>Hora</dt><dd class="empty" id="sTime">Por elegir</dd></div>
+          <div class="sum-row"><dt>Paciente</dt><dd class="empty" id="sName">Por completar</dd></div>
         </div>
-      </fieldset>
-
-      <!-- PASO 4 -->
-      <div class="step wiz-body" id="st4">
-        <h3>4 · Revisa y envía tu solicitud</h3>
-        <dl class="sum" id="sum"></dl>
-        <div class="send">
-          <a class="btn btn-wa" id="waSend" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#s-wa"/></svg>Enviar por WhatsApp</a>
-          <button class="btn btn-line" type="button" id="icsBtn"><svg class="ico"><use href="#s-dl"/></svg>Guardar en mi calendario</button>
+        <div class="sum-cta">
+          <button class="btn btn-wa" type="submit" id="sendBtn"><svg class="ico"><use href="#i-wa"/></svg>Enviar por WhatsApp</button>
+          <p class="sum-note"><svg class="ico"><use href="#i-info"/></svg><span>Se abrirá WhatsApp con tu solicitud redactada. El consultorio confirmará el horario disponible contigo.</span></p>
         </div>
-        <p class="ok-note">Al enviar, se abrirá WhatsApp con tu solicitud ya redactada — solo pulsa <b>enviar</b>. El consultorio confirmará tu cita por ese medio.</p>
-      </div>
-
-      </div>
-      <div class="wiz-ft">
-        <button class="btn btn-line" type="button" id="back" hidden>← Atrás</button>
-        <span class="hint" id="stepHint">Paso 1 de 4</span>
-        <button class="btn btn-green" type="button" id="next">Continuar <svg class="ico"><use href="#s-arrow"/></svg></button>
-      </div>
+      </aside>
     </form>
   </div>
 </section>
 
-<!-- CONTACTO -->
-<section class="sec" id="contacto">
+<!-- CTA BAND -->
+<section class="sec" style="padding-top:0">
   <div class="wrap">
-    <header class="sec-hd rv">
-      <span class="no">06 / LOCALIZACIÓN</span>
-      <h2>Contacto y consultorio</h2>
-    </header>
-    <div class="con">
-      <dl class="con-list rv">
-        <div><dt>Consultorio</dt><dd>Av. Insurgentes Sur 1602, Piso 4, Consultorio 402.<br>Col. Crédito Constructor, Miguel Hidalgo, CDMX.</dd></div>
-        <div><dt>Teléfonos</dt><dd><a href="tel:+525555458811">(55) 5545 8811</a> · <a href="tel:+525541881244">(55) 4188 1244</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:dr.mora@oftalmologia.com">dr.mora@oftalmologia.com</a></dd></div>
-        <div><dt>Horario</dt><dd>Lunes a viernes 09:00–19:00 h<br>Sábado 09:00–14:00 h</dd></div>
-        <div><dt>Redes</dt><dd class="socials" style="padding-top:.2rem">
-          <a href="https://wa.me/525555458811" target="_blank" rel="noopener"><svg class="ico"><use href="#s-wa"/></svg>WhatsApp</a>
+    <div class="cta-band rv">
+      <h2>¿Listo para ver el mundo sin lentes?</h2>
+      <p>Agenda tu valoración hoy y da el primer paso hacia una visión clara.</p>
+      <div class="row">
+        <a class="btn btn-light" href="#agendar"><svg class="ico"><use href="#i-cal"/></svg>Agendar valoración</a>
+        <a class="btn btn-wa" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="sec contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <div class="sec-head rv" style="margin-bottom:1.5rem">
+        <span class="eyebrow">Contacto</span>
+        <h2>Visítanos o escríbenos</h2>
+      </div>
+      <div class="rv d1">
+        <div class="ci"><div class="ci-ico"><svg class="ico"><use href="#i-pin"/></svg></div><div><b>Consultorio</b><p>Av. Insurgentes Sur 1602, Piso 4, Consultorio 402.<br>Col. Crédito Constructor, Miguel Hidalgo, CDMX.</p></div></div>
+        <div class="ci"><div class="ci-ico"><svg class="ico"><use href="#i-phone"/></svg></div><div><b>Teléfonos</b><p><a href="tel:+525555458811">(55) 5545 8811</a> · <a href="tel:+525541881244">(55) 4188 1244</a></p></div></div>
+        <div class="ci"><div class="ci-ico"><svg class="ico"><use href="#i-mail"/></svg></div><div><b>Email</b><p><a href="mailto:dr.mora@oftalmologia.com">dr.mora@oftalmologia.com</a></p></div></div>
+        <div class="ci"><div class="ci-ico"><svg class="ico"><use href="#i-clock"/></svg></div><div><b>Horario</b><p>Lunes a viernes 09:00–19:00 h · Sábado 09:00–14:00 h</p></div></div>
+        <div class="socials">
+          <a href="https://wa.me/525555458811" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>
           <a href="#" rel="noopener">Instagram</a>
           <a href="#" rel="noopener">Facebook</a>
           <a href="#" rel="noopener">YouTube</a>
           <a href="#" rel="noopener">TikTok</a>
-        </dd></div>
-      </dl>
-      <aside class="geo rv">
-        <span class="k">Coordenadas</span>
-        <b>Av. Insurgentes Sur 1602 — Consultorio 402</b>
-        <p>Zona Insurgentes / WTC. Estacionamiento en el edificio. Acceso para silla de ruedas.</p>
-        <a class="btn btn-line" style="border-color:#4A4536;color:var(--paper)" href="https://maps.google.com/?q=Av.+Insurgentes+Sur+1602,+CDMX" target="_blank" rel="noopener"><svg class="ico"><use href="#s-pin"/></svg>Abrir en Google Maps</a>
-      </aside>
+        </div>
+      </div>
+    </div>
+    <div class="mapcard rv d2">
+      <div class="mapfacade" id="mapFacade" role="button" tabindex="0" aria-label="Cargar mapa de ubicación">
+        <span class="pin"><svg class="ico" style="width:28px;height:28px"><use href="#i-pin"/></svg></span>
+        <b>Av. Insurgentes Sur 1602 — 402</b>
+        <span>Zona Insurgentes / WTC · Estacionamiento en el edificio · Toca para ver el mapa</span>
+        <span class="btn btn-ghost" style="pointer-events:none">Ver mapa</span>
+      </div>
     </div>
   </div>
 </section>
@@ -630,207 +827,256 @@ input,select,textarea{font:inherit;color:inherit}
 </main>
 
 <!-- FOOTER -->
-<footer class="ft">
+<footer class="footer">
   <div class="wrap">
-    <span class="mono" style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase">Dr. Juan Daniel de la Torre Tovar — Oftalmólogo</span>
-    <nav aria-label="Pie de página">
-      <a href="#procedimientos">Procedimientos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#doctor">El Doctor</a>
-      <a href="#agendar">Agendar</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <div class="top">
+      <div>
+        <span class="brand"><img src="assets/logo.png" alt="" style="height:42px"><span><b>de la Torre Tovar</b><br><small>Oftalmología · CDMX</small></span></span>
+        <p class="about">Cirugía ocular con tecnología láser de última generación. Más de 15 años devolviendo la visión clara a miles de pacientes.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#procedimientos">Procedimientos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#doctor">El Doctor</a></li>
+          <li><a href="#agendar">Agendar cita</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+525555458811">(55) 5545 8811</a></li>
+          <li><a href="tel:+525541881244">(55) 4188 1244</a></li>
+          <li><a href="mailto:dr.mora@oftalmologia.com">dr.mora@oftalmologia.com</a></li>
+          <li>Insurgentes Sur 1602 — 402, CDMX</li>
+        </ul>
+      </div>
+    </div>
     <p class="legal">© 2025 Dr. Juan Daniel de la Torre Tovar · Céd. Prof. 1742564 · Céd. Esp. 4011033 · Todos los derechos reservados.</p>
   </div>
 </footer>
 
-<a class="waf" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-  <svg class="ico"><use href="#s-wa"/></svg>
-</a>
+<button class="totop" id="totop" aria-label="Volver arriba"><svg class="ico"><use href="#i-up"/></svg></button>
+<a class="waf" href="https://wa.me/525555458811?text=Hola,%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
 
 <script>
 (function(){
 "use strict";
 var WA="525555458811";
+var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+var $=function(s,c){return (c||document).querySelector(s)};
+var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+/* ---------- header scroll + progress + totop ---------- */
+var hd=$("#hd"),prog=$("#progress"),totop=$("#totop");
+function onScroll(){
+  var y=window.scrollY||0;
+  hd.classList.toggle("stuck",y>10);
+  var h=document.documentElement.scrollHeight-innerHeight;
+  prog.style.width=(h>0?(y/h*100):0)+"%";
+  totop.classList.toggle("show",y>600);
+}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+totop.addEventListener("click",function(){scrollTo({top:0,behavior:reduce?"auto":"smooth"})});
+
+/* ---------- mobile drawer ---------- */
+var drawer=$("#drawer"),burger=$("#burger");
+function setDrawer(open){
+  drawer.classList.toggle("open",open);
+  burger.setAttribute("aria-expanded",open);
+  document.body.style.overflow=open?"hidden":"";
+}
+burger.addEventListener("click",function(){setDrawer(true)});
+$("#drawerClose").addEventListener("click",function(){setDrawer(false)});
+drawer.addEventListener("click",function(e){if(e.target===drawer)setDrawer(false)});
+$$(".drawer a").forEach(function(a){a.addEventListener("click",function(){setDrawer(false)})});
+addEventListener("keydown",function(e){if(e.key==="Escape")setDrawer(false)});
+
+/* ---------- reveal ---------- */
+var rv=$$(".rv");
+if(reduce||!("IntersectionObserver"in window)){rv.forEach(function(e){e.classList.add("in")});}
+else{
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12,rootMargin:"0px 0px -40px"});
+  rv.forEach(function(e){io.observe(e)});
+}
+
+/* ---------- counters ---------- */
+function animCount(el){
+  var target=+el.getAttribute("data-count"),dur=1400,t0=null;
+  function fmt(n){return n>=1000?n.toLocaleString("es-MX"):n}
+  if(reduce){el.textContent=fmt(target);return}
+  function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1);var e=1-Math.pow(1-p,3);el.textContent=fmt(Math.round(target*e));if(p<1)requestAnimationFrame(step)}
+  requestAnimationFrame(step);
+}
+var counters=$$("[data-count]");
+if("IntersectionObserver"in window){
+  var cio=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){animCount(x.target);cio.unobserve(x.target)}})},{threshold:.6});
+  counters.forEach(function(c){cio.observe(c)});
+}else counters.forEach(animCount);
+
+/* ---------- procedures filter ---------- */
+var tog=$("#toggle"),pill=$("#togPill"),tbtns=$$("#toggle button"),grid=$("#procGrid");
+function movePill(btn){pill.style.width=btn.offsetWidth+"px";pill.style.transform="translateX("+(btn.offsetLeft-tog.querySelector("button").offsetLeft)+"px)"}
+function filter(f){
+  $$(".proc",grid).forEach(function(c){
+    var show=f==="all"||c.getAttribute("data-cat")===f;
+    c.style.display=show?"":"none";
+  });
+}
+tbtns.forEach(function(b){b.addEventListener("click",function(){
+  tbtns.forEach(function(x){x.classList.remove("on");x.setAttribute("aria-selected","false")});
+  b.classList.add("on");b.setAttribute("aria-selected","true");
+  movePill(b);filter(b.getAttribute("data-filter"));
+})});
+requestAnimationFrame(function(){movePill(tbtns[0])});
+addEventListener("resize",function(){var on=$("#toggle button.on");if(on)movePill(on)});
+
+/* ---------- testimonials carousel ---------- */
+var track=$("#tstTrack"),slides=$$(".tst-slide",track),dotsBox=$("#tstDots"),idx=0,timer;
+slides.forEach(function(_,i){var d=document.createElement("button");d.setAttribute("aria-label","Ir al testimonio "+(i+1));if(i===0)d.className="on";d.addEventListener("click",function(){go(i)});dotsBox.appendChild(d)});
+var dots=$$("button",dotsBox);
+function go(i){idx=(i+slides.length)%slides.length;track.style.transform="translateX("+(-idx*100)+"%)";dots.forEach(function(d,j){d.classList.toggle("on",j===idx)})}
+$("#tstNext").addEventListener("click",function(){go(idx+1);restart()});
+$("#tstPrev").addEventListener("click",function(){go(idx-1);restart()});
+function restart(){if(reduce)return;clearInterval(timer);timer=setInterval(function(){go(idx+1)},6000)}
+restart();
+// swipe
+var x0=null;
+track.addEventListener("touchstart",function(e){x0=e.touches[0].clientX},{passive:true});
+track.addEventListener("touchend",function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>44){go(idx+(dx<0?1:-1));restart()}x0=null},{passive:true});
+
+/* ---------- map facade (click to load) ---------- */
+var mf=$("#mapFacade");
+function loadMap(){
+  var ifr=document.createElement("iframe");
+  ifr.title="Mapa de ubicación del consultorio";ifr.loading="lazy";ifr.referrerPolicy="no-referrer-when-downgrade";
+  ifr.src="https://maps.google.com/maps?q=Av.%20Insurgentes%20Sur%201602,%20CDMX&z=15&output=embed";
+  mf.parentNode.appendChild(ifr);mf.remove();
+}
+mf.addEventListener("click",loadMap);
+mf.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();loadMap()}});
+
+/* ========================================================
+   BOOKING
+======================================================== */
 var PROCS=[
- {id:"lasik",name:"Cirugía LASIK",info:"$9,700 · ambos ojos"},
- {id:"cata",name:"Cirugía de Cataratas",info:"$12,900 · por ojo"},
- {id:"pter",name:"Cirugía de Carnosidad (Pterigión)",info:"$8,250"},
- {id:"cross",name:"Cross-Linking",info:"$9,500 · ambos ojos"},
- {id:"glau",name:"Cirugía de Glaucoma",info:"desde $19,500"},
- {id:"rev",name:"Revisión Oftalmológica",info:"consulta"},
- {id:"otro",name:"Aún no lo sé / valoración",info:"te orientamos"}
+ {v:"Cirugía LASIK",info:"$9,700 · ambos ojos"},
+ {v:"Cirugía de Cataratas",info:"$12,900 · por ojo"},
+ {v:"Cirugía de Carnosidad (Pterigión)",info:"$8,250"},
+ {v:"Cross-Linking",info:"$9,500 · ambos ojos"},
+ {v:"Cirugía de Glaucoma",info:"desde $19,500"},
+ {v:"Revisión Oftalmológica",info:"consulta"},
+ {v:"Aún no lo sé / valoración",info:"te orientamos"}
 ];
-var DOW=["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"];
-var MES=["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"];
+var DOW=["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"],MES=["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"];
+var S={proc:null,date:null,time:null,name:"",tel:"",notes:""};
+function pad(n){return(n<10?"0":"")+n}
 
-/* estado único (fuente de verdad) */
-var S={step:1,proc:null,date:null,time:null,name:"",tel:"",notes:""};
-
-var $=function(id){return document.getElementById(id)};
-
-/* ---- paso 1: procedimientos ---- */
-var ph=$("procs");
+/* proc options */
+var po=$("#procOpts");
 PROCS.forEach(function(p,i){
   var d=document.createElement("div");d.className="opt";
-  d.innerHTML='<input type="radio" name="proc" id="p'+i+'" value="'+p.name+'"><label for="p'+i+'"><b>'+p.name+'</b><small>'+p.info+'</small></label>';
-  ph.appendChild(d);
-  d.querySelector("input").addEventListener("change",function(){S.proc=p.name});
+  d.innerHTML='<input type="radio" name="bproc" id="bp'+i+'" value="'+p.v+'"><label for="bp'+i+'"><b>'+p.v+'</b><small>'+p.info+'</small></label>';
+  po.appendChild(d);
+  $("input",d).addEventListener("change",function(){S.proc=p.v;sync()});
 });
 
-/* prefill desde el tarifario */
-document.querySelectorAll(".go[data-proc]").forEach(function(b){
+/* days */
+var daysBox=$("#days");
+(function buildDays(){
+  var d=new Date();d.setDate(d.getDate()+1);var made=0;
+  while(made<14){
+    if(d.getDay()!==0){(function(dt){
+      var b=document.createElement("button");b.type="button";b.className="day";b.setAttribute("role","option");
+      b.innerHTML="<small>"+DOW[dt.getDay()]+"</small><b>"+dt.getDate()+"</b><em>"+MES[dt.getMonth()]+"</em>";
+      b.addEventListener("click",function(){
+        $$(".day",daysBox).forEach(function(x){x.classList.remove("on");x.setAttribute("aria-selected","false")});
+        b.classList.add("on");b.setAttribute("aria-selected","true");
+        S.date=new Date(dt);S.time=null;buildSlots(dt);sync();
+      });
+      daysBox.appendChild(b);
+    })(new Date(d));made++;}
+    d.setDate(d.getDate()+1);
+  }
+})();
+// fade edges
+var fadeL=$("#fadeL"),fadeR=$("#fadeR");
+daysBox.addEventListener("scroll",function(){
+  fadeL.style.opacity=daysBox.scrollLeft>4?1:0;
+  fadeR.style.opacity=(daysBox.scrollLeft+daysBox.clientWidth<daysBox.scrollWidth-4)?1:0;
+},{passive:true});
+
+/* slots */
+var slotsBox=$("#slots"),slotLabel=$("#slotLabel");
+function buildSlots(dt){
+  slotsBox.innerHTML="";
+  var endH=dt.getDay()===6?13:18;
+  slotLabel.innerHTML='Horarios para <b>'+DOW[dt.getDay()]+" "+dt.getDate()+" "+MES[dt.getMonth()]+'</b>';
+  for(var h=9;h<=endH;h++){for(var m=0;m<60;m+=30){
+    if(h===endH&&m>30)break;
+    (function(t){var b=document.createElement("button");b.type="button";b.className="slot";b.textContent=t;
+      b.addEventListener("click",function(){$$(".slot",slotsBox).forEach(function(x){x.classList.remove("on")});b.classList.add("on");S.time=t;sync()});
+      slotsBox.appendChild(b);})(pad(h)+":"+pad(m));
+  }}
+}
+
+/* summary sync */
+function dateLabel(){return S.date?DOW[S.date.getDay()]+" "+S.date.getDate()+" "+MES[S.date.getMonth()]+" "+S.date.getFullYear():null}
+function setCell(id,val){var el=$(id);if(val){el.textContent=val;el.classList.remove("empty")}else{el.classList.add("empty")}}
+function sync(){
+  setCell("#sProc",S.proc);
+  setCell("#sDate",dateLabel());
+  setCell("#sTime",S.time?S.time+" h":null);
+  setCell("#sName",S.name||null);
+}
+
+/* validation + submit */
+function validTel(v){return /^\d{10}$/.test((v||"").replace(/\D/g,""))}
+$("#inN").addEventListener("input",function(){S.name=this.value.trim();sync()});
+$("#inN").addEventListener("blur",function(){$("#fN").classList.toggle("bad",!this.value.trim())});
+$("#inT").addEventListener("input",function(){S.tel=this.value.trim()});
+$("#inT").addEventListener("blur",function(){$("#fT").classList.toggle("bad",!validTel(this.value))});
+$("#inX").addEventListener("input",function(){S.notes=this.value.trim()});
+
+$("#bookForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  var problems=[];
+  if(!S.proc)problems.push("elige un procedimiento");
+  if(!S.date)problems.push("elige un día");
+  if(!S.time)problems.push("elige una hora");
+  S.name=$("#inN").value.trim();S.tel=$("#inT").value.trim();
+  $("#fN").classList.toggle("bad",!S.name);if(!S.name)problems.push("escribe tu nombre");
+  $("#fT").classList.toggle("bad",!validTel(S.tel));if(!validTel(S.tel))problems.push("teléfono a 10 dígitos");
+  if(problems.length){
+    var first=!S.proc?"#procOpts":!S.date?"#days":!S.time?"#slots":!S.name?"#inN":"#inT";
+    var t=$(first);if(t&&t.scrollIntoView)t.scrollIntoView({behavior:reduce?"auto":"smooth",block:"center"});
+    if($("#inN")===t||first==="#inT")t.focus({preventScroll:true});
+    alert("Para enviar tu solicitud: "+problems.join(", ")+".");
+    return;
+  }
+  var msg="SOLICITUD DE CITA\n"
+   +"• Procedimiento: "+S.proc+"\n"
+   +"• Fecha: "+dateLabel()+"\n"
+   +"• Hora: "+S.time+" h\n"
+   +"• Paciente: "+S.name+"\n"
+   +"• Teléfono: "+S.tel
+   +(S.notes?"\n• Notas: "+S.notes:"");
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank","noopener");
+});
+
+/* prefill from procedure cards -> scroll to booking */
+$$(".book-btn[data-proc]").forEach(function(b){
   b.addEventListener("click",function(){
     var want=b.getAttribute("data-proc");
-    var inp=Array.prototype.find.call(document.querySelectorAll('#procs input'),function(i){return i.value===want});
-    if(inp){inp.checked=true;S.proc=want}
-    go(1);
-    location.hash="#agendar";
+    var inp=$$('#procOpts input').filter(function(i){return i.value===want})[0];
+    if(inp){inp.checked=true;S.proc=want;sync()}
+    var target=$("#agendar");
+    if(target)target.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});
   });
 });
 
-/* ---- paso 2: días y horas ---- */
-var dh=$("days"),sh=$("slots");
-function pad(n){return (n<10?"0":"")+n}
-function buildDays(){
-  var d=new Date();d.setDate(d.getDate()+1);
-  var made=0;
-  while(made<14){
-    if(d.getDay()!==0){
-      (function(dt){
-        var b=document.createElement("button");
-        b.type="button";b.className="day";b.setAttribute("role","option");
-        b.innerHTML="<small>"+DOW[dt.getDay()]+"</small><b>"+dt.getDate()+"</b><em>"+MES[dt.getMonth()]+"</em>";
-        b.addEventListener("click",function(){
-          dh.querySelectorAll(".day").forEach(function(x){x.classList.remove("on")});
-          b.classList.add("on");
-          S.date=new Date(dt);S.time=null;
-          buildSlots(dt);
-        });
-        dh.appendChild(b);
-      })(new Date(d));
-      made++;
-    }
-    d.setDate(d.getDate()+1);
-  }
-}
-function buildSlots(dt){
-  sh.innerHTML="";
-  var endH=dt.getDay()===6?13:18;
-  var endM=30;
-  for(var h=9;h<=endH;h++){
-    for(var m=0;m<60;m+=30){
-      if(h===endH&&m>endM)break;
-      (function(t){
-        var b=document.createElement("button");
-        b.type="button";b.className="slot";b.textContent=t;
-        b.addEventListener("click",function(){
-          sh.querySelectorAll(".slot").forEach(function(x){x.classList.remove("on")});
-          b.classList.add("on");S.time=t;
-        });
-        sh.appendChild(b);
-      })(pad(h)+":"+pad(m));
-    }
-  }
-}
-buildDays();
-
-/* ---- validación por paso ---- */
-function validTel(v){return /^\d{10}$/.test(v.replace(/\D/g,""))}
-function check(step){
-  if(step===1){
-    if(S.proc)return true;
-    alert("Elige un procedimiento para continuar.");return false;
-  }
-  if(step===2){
-    if(S.date&&S.time)return true;
-    alert("Elige día y hora para continuar.");return false;
-  }
-  if(step===3){
-    var ok=true;
-    S.name=$("inN").value.trim();S.tel=$("inT").value.trim();S.notes=$("inX").value.trim();
-    $("fN").classList.toggle("bad",!S.name);if(!S.name)ok=false;
-    $("fT").classList.toggle("bad",!validTel(S.tel));if(!validTel(S.tel))ok=false;
-    return ok;
-  }
-  return true;
-}
-$("inN").addEventListener("blur",function(){$("fN").classList.toggle("bad",!this.value.trim())});
-$("inT").addEventListener("blur",function(){$("fT").classList.toggle("bad",!validTel(this.value))});
-
-/* ---- navegación ---- */
-function dateLabel(){
-  if(!S.date)return"";
-  return DOW[S.date.getDay()]+" "+S.date.getDate()+" "+MES[S.date.getMonth()]+" "+S.date.getFullYear();
-}
-function render(){
-  for(var i=1;i<=4;i++){
-    $("st"+i).classList.toggle("on",S.step===i);
-    var t=$("tab"+i);
-    t.classList.toggle("on",S.step===i);
-    t.classList.toggle("done",S.step>i);
-  }
-  $("back").hidden=S.step===1;
-  $("next").style.display=S.step===4?"none":"inline-flex";
-  $("stepHint").textContent="Paso "+S.step+" de 4";
-  if(S.step===4)fillSummary();
-}
-function go(n){S.step=n;render();}
-$("next").addEventListener("click",function(){
-  if(check(S.step))go(S.step+1);
-});
-$("back").addEventListener("click",function(){go(S.step-1)});
-
-/* ---- resumen + envío ---- */
-function fillSummary(){
-  var s=$("sum");
-  s.innerHTML='<span class="seal">Solicitud lista</span>'
-   +'<div><dt>Procedimiento</dt><dd>'+S.proc+'</dd></div>'
-   +'<div><dt>Fecha</dt><dd>'+dateLabel()+'</dd></div>'
-   +'<div><dt>Hora</dt><dd>'+S.time+' h</dd></div>'
-   +'<div><dt>Paciente</dt><dd>'+S.name+'</dd></div>'
-   +'<div><dt>Teléfono</dt><dd>'+S.tel+'</dd></div>'
-   +(S.notes?'<div><dt>Notas</dt><dd>'+S.notes+'</dd></div>':'');
-  var msg="SOLICITUD DE CITA\n"
-   +"· Procedimiento: "+S.proc+"\n"
-   +"· Fecha: "+dateLabel()+"\n"
-   +"· Hora: "+S.time+" h\n"
-   +"· Paciente: "+S.name+"\n"
-   +"· Teléfono: "+S.tel
-   +(S.notes?"\n· Notas: "+S.notes:"");
-  $("waSend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
-}
-$("icsBtn").addEventListener("click",function(){
-  if(!S.date||!S.time)return;
-  var hm=S.time.split(":");
-  var st=new Date(S.date);st.setHours(+hm[0],+hm[1],0,0);
-  var en=new Date(st.getTime()+30*60000);
-  function f(d){return d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+"T"+pad(d.getHours())+pad(d.getMinutes())+"00"}
-  var ics="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//DrTovar//Cita//ES\r\nBEGIN:VEVENT\r\n"
-   +"UID:"+Date.now()+"@drtovar\r\nDTSTAMP:"+f(new Date())+"\r\nDTSTART:"+f(st)+"\r\nDTEND:"+f(en)+"\r\n"
-   +"SUMMARY:Cita oftalmológica — Dr. de la Torre Tovar\r\n"
-   +"DESCRIPTION:"+S.proc.replace(/,/g,"\\,")+"\r\n"
-   +"LOCATION:Av. Insurgentes Sur 1602\\, Piso 4\\, Consultorio 402\\, CDMX\r\n"
-   +"END:VEVENT\r\nEND:VCALENDAR";
-  var a=document.createElement("a");
-  a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));
-  a.download="cita-oftalmologia.ics";
-  document.body.appendChild(a);a.click();
-  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},400);
-});
-
-render();
-
-/* ---- reveal sutil ---- */
-var els=document.querySelectorAll(".rv");
-if(!("IntersectionObserver"in window)||matchMedia("(prefers-reduced-motion:reduce)").matches){
-  els.forEach(function(e){e.classList.add("in")});
-}else{
-  var io=new IntersectionObserver(function(en){
-    en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}});
-  },{threshold:.1,rootMargin:"0px 0px -30px 0px"});
-  els.forEach(function(e){io.observe(e)});
-}
+sync();
 })();
 </script>
 </body>
